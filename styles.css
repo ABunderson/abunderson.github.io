@@ -30,5 +30,5 @@ footer {
 }
 main img {
   float: right;
-  width: 100px;
+  max-width: 100px;
 }
