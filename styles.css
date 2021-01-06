@@ -31,4 +31,5 @@ footer {
 header img {
   float: right;
   width: 200px;
+  box-shadow: 5px;
 }
