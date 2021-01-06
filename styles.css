@@ -24,7 +24,6 @@ body {
   background-color: #f3c3f0;
   padding: 3em;
   color: black;
-  font: bold;
 }
 hr {
   border: 1px solid black;
@@ -40,8 +39,14 @@ header img {
 nav a:hover {
   color: #0af3ff;
 }
-nav a:visited, nav a:link {
+nav a:visited,
+nav a:link {
   color: #2a1429;
 }
-footer a:link, footer a:visited{ color: #f3c3f0}
-footer a:hover{ color: white}
+footer a:link,
+footer a:visited {
+  color: #f3c3f0;
+}
+footer a:hover {
+  color: white;
+}
