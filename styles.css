@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Tajawal");
+#content{max-width: 960px; }
 html {
     background-color: #B38D97;
     font-family: "Tajawal";
