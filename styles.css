@@ -19,8 +19,7 @@ body {
   color: #14342b;
 }
 hr {
-    color: #14342b;
-    background-color: #14342b;
+    border: 1px solid #14342b;
 }
 footer {
   text-align: center;
