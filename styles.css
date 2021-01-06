@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Tajawal");
 
 html {
-  background-color: #b38d97;
+  background-color: #84a98c;
   font-family: "Tajawal";
   margin: 1.25em auto;
   max-width: 775px;
@@ -14,4 +14,5 @@ header {
 body {
     font-size: 18px;
     line-height: 1.5;
+    background-color: #b38d97;
 }
