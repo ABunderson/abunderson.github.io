@@ -7,16 +7,17 @@ html {
   max-width: 850px;
 }
 header {
-    padding: 1em 1em 1em 3em;
+  padding: 1em 1em 1em 3em;
 }
-header, footer {
+header,
+footer {
   background-color: #331832;
   color: #cad2c5;
   border-radius: 20px;
 }
-footer{
-    padding: .25em;
-    text-align: center;
+footer {
+  padding: 0.25em;
+  text-align: center;
 }
 body {
   font-size: 18px;
@@ -25,13 +26,13 @@ body {
   color: #14342b;
 }
 hr {
-    border: 1px solid #14342b;
+  border: 1px solid #14342b;
 }
 header img {
   float: right;
   width: 200px;
-  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 #updatetime {
-    color: #84a98c;
+  color: #84a98c;
 }
