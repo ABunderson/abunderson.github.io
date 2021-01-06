@@ -3,7 +3,7 @@
 html {
   background-color: #84a98c;
   font-family: "Tajawal";
-  margin: 1.25em auto;
+  margin: 1em auto;
   max-width: 850px;
 }
 header {
@@ -14,7 +14,6 @@ header {
 }
 body {
   font-size: 18px;
-  line-height: 1.5;
   background-color: #b38d97;
   padding: 3em;
   color: #14342b;
@@ -33,4 +32,5 @@ footer {
 header img {
   float: right;
   width: 200px;
+  padding: 2em;
 }
