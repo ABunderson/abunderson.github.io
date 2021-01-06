@@ -27,4 +27,5 @@ footer {
 }
 main img {
     float: right;
+    margin-top: -3em;
 }
