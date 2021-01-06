@@ -45,3 +45,6 @@ li a:hover {
 li a:visited {
   color: #2a1429;
 }
+footer a:link{ color: #f3c3f0}
+footer a:hover{ color: white}
+footer a:visited{color: #c5e73d}
