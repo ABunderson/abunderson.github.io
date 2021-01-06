@@ -36,6 +36,12 @@ header img {
 #updatetime {
   color: white;
 }
-a:link{ color: #004346}
-a:hover{ color: }
-a:visited{ color: }
+a:link {
+  color: #004346;
+}
+a:hover {
+  color: #0af3ff;
+}
+a:visited {
+  color: #2a1429;
+}
