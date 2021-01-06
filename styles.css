@@ -21,7 +21,7 @@ footer {
 }
 body {
   font-size: 18px;
-  background-color: #b38d97;
+  background-color: #f3c3f0;
   padding: 3em;
   color: black;
 }
@@ -36,3 +36,6 @@ header img {
 #updatetime {
   color: white;
 }
+a:link{ color: #004346}
+a:hover{ color: }
+a:visited{ color: }
