@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Exo+2")
+@import url("https://fonts.googleapis.com/css?family=Exo2")
 header {
   background-color: #331832;
   padding: 3em;
@@ -6,5 +6,5 @@ header {
 }
 html {
     background-color: #B38D97;
-    font-family: "Exo 2";
+    font-family: "Exo2";
 }
