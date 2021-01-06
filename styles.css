@@ -24,3 +24,6 @@ footer {
     color: #cad2c5;
     padding: 1em;
 }
+hr {
+    border-top: 10px solid #14342b;
+}
