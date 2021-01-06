@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2")
 header {
   background-color: #331832;
   padding: 3em;
   color:#CAD2C5;
+}
+html {
+    background-color: #B38D97;
+    font-family: "Exo 2";
 }
