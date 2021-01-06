@@ -13,19 +13,18 @@ header {
   border-radius: 20px;
 }
 body {
-    font-size: 18px;
-    line-height: 1.5;
-    background-color: #b38d97;
-    padding: 3em;
-    color: #14342b;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #b38d97;
+  padding: 3em;
+  color: #14342b;
 }
 footer {
-    text-align: center;
-    background-color: #331832;
-    color: #cad2c5;
-    padding: 1em;
+  text-align: center;
+  background-color: #331832;
+  color: #cad2c5;
+  padding: 1em;
 }
 main img {
-    float: right;
-    margin-top: -3em;
+  float: right;
 }
