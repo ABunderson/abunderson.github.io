@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Tajawal");
 
 html {
-  background-color: #c4e7da;
+  background-color: #214e34;
   font-family: "Tajawal";
   margin: 1em auto;
   max-width: 850px;
@@ -23,10 +23,10 @@ body {
   font-size: 18px;
   background-color: #b38d97;
   padding: 3em;
-  color: #14342b;
+  color: black;
 }
 hr {
-  border: 1px solid #14342b;
+  border: 1px solid black;
 }
 header img {
   float: right;
@@ -34,5 +34,5 @@ header img {
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 #updatetime {
-  color: #c4e7da;
+  color: white;
 }
