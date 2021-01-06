@@ -21,14 +21,16 @@ body {
 }
 hr {
     color: #14342b;
+    background-color: #14342b;
 }
 footer {
   text-align: center;
   background-color: #331832;
   color: #cad2c5;
-  padding: 1em;
+  padding: .75em;
+  border-radius: 20px;
 }
 header img {
   float: right;
-  width: 150px;
+  width: 200px;
 }
