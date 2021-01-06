@@ -26,6 +26,7 @@ footer {
   background-color: #331832;
   color: #cad2c5;
   border-radius: 20px;
+  padding: .25em
 }
 header img {
   float: right;
