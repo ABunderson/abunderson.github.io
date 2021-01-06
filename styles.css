@@ -19,6 +19,9 @@ body {
   padding: 3em;
   color: #14342b;
 }
+hr {
+    color: #14342b;
+}
 footer {
   text-align: center;
   background-color: #331832;
@@ -27,4 +30,5 @@ footer {
 }
 main img {
   float: right;
+  width: 100px;
 }
