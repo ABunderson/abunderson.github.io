@@ -35,12 +35,15 @@
         &copy; 2021 | Adrienne R. Bunderson | Utah |
         <a href="https://byui.edu/online">BYUI Online Learning</a>
       </p>
-      <p id="updatetime">Last Updated:</p>
-      <span></span>
+      <p>Last Updated:
+      <span id="updatetime"></span>
+    </p>
     </footer>
     <script>
+    
       var date = document.lastModified;
-      document.write(date);
+      document.getElementById('updatetime').textContent = date;
+      //document.write(date);
     </script>
   </body>
 </html>
