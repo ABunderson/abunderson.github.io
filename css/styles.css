@@ -42,7 +42,10 @@ li a:link {
   color: #2a1429;
 }
 li a:hover {
-  color: #0af3ff;
+  color: #f3c3f0;
+  padding: .25em;
+  background-color: #331832;
+  border-radius: 15px;
 }
 footer a:link,
 footer a:visited {
