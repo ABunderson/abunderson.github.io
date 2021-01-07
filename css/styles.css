@@ -36,11 +36,11 @@ header img {
 #updatetime {
   color: white;
 }
-nav a:hover {
+li a:hover {
   color: #0af3ff;
 }
-nav a:visited,
-nav a:link {
+li a:visited,
+li a:link {
   color: #2a1429;
 }
 footer a:link,
