@@ -37,11 +37,11 @@ header img {
   color: white;
 }
 
-li a:visited,
-li a:link {
+nav a:visited,
+nav a:link {
   color: #2a1429;
 }
-li a:hover {
+nav a:hover {
   color: #f3c3f0;
   padding: 0.25em;
   background-color: #331832;
