@@ -1,4 +1,2 @@
-<script> 
-var date = document.lastModified;
-document.getElementById('lastupdate').textContent = "Last Updated: " + date;
-</script>
+document.getElementById("lastupdate").textContent =
+  "Last Updated: " + document.lastModified;
