@@ -8,7 +8,7 @@
       name="description"
       content="Webpage containing content from the WDD 230 class at BYU-I for Adrienne Bunderson"
     />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -35,8 +35,14 @@
         &copy; 2021 | Adrienne R. Bunderson | Utah |
         <a href="https://byui.edu/online">BYUI Online Learning</a>
       </p>
-        <span id="updatetime"></span>
+      <p>
+        <span id="lastupdate"></span>
+      </p>
     </footer>
-    <script src="js/lastupdate.js"></script>
+    <script>
+      var date = document.lastModified;
+      document.getElementById("lastupdate").textContent =
+        "Last Updated: " + date;
+    </script>
   </body>
 </html>

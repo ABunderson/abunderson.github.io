@@ -33,7 +33,7 @@ header img {
   width: 200px;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
-#updatetime {
+#lastupdate {
   color: white;
 }
 
@@ -43,7 +43,7 @@ li a:link {
 }
 li a:hover {
   color: #f3c3f0;
-  padding: .25em;
+  padding: 0.25em;
   background-color: #331832;
   border-radius: 15px;
 }
