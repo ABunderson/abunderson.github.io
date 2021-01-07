@@ -24,6 +24,7 @@ body {
   background-color: #f3c3f0;
   padding: 3em;
   color: black;
+  border-radius: 20px;
 }
 hr {
   border: 1px solid black;
