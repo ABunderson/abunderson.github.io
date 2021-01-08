@@ -2,14 +2,19 @@
 /*color palate https://coolors.co/2a1429-004346-f3cef0-cad2c5-c5e7d3*/
 html {
   font-family: "Exo 2", sans-serif;
-  margin: 1em auto;
+  margin: 1rem auto;
   max-width: 850px;
 }
+
 h1 {
   font-family: "Caveat", sans-serif;
+  letter-spacing: 1px;
+}
+header img {
+  width: 200px;
 }
 header {
-  padding: 1em 1em 1em 3em;
+  padding: 1rem;
 }
 header,
 footer {
@@ -17,24 +22,24 @@ footer {
   color: #cad2c5;
 }
 footer {
-  padding: 0.25em;
+  padding: 0.25rem;
   text-align: center;
-}
-body {
-  font-size: 18px;
-  background-color: #f3c3f0;
-  padding: 3em;
-  color: black;
-  border-radius: 20px;
-}
-hr {
-  border: 1px solid black;
-}
-header img {
-  width: 200px;
 }
 #lastupdate {
   color: white;
+}
+
+body {
+  font-size: 18px;
+  color: black;
+  border-radius: 20px;
+}
+main {
+  padding: 1rem;
+  background-color: #f3c3f0;
+}
+hr {
+  border: 1px solid black;
 }
 
 nav a:visited,

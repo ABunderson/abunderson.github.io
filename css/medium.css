@@ -1,13 +1,30 @@
 @media only screen and (min-width: 32.5em) {
+  html {
+    background-color: #214e34;
+  }
   header img {
     float: right;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px black;
   }
   header,
-footer {
-  border-radius: 20px;
-}
-html {
-    background-color: #214e34;
-}
+  footer {
+    border-radius: 20px;
+  }
+  header {
+    padding: 1rem 1rem 1rem 100px;
+  }
+  
+  body {
+    padding: 3rem;
+    background-color: #f3c3f0;
+  }
+  main {
+    margin-left: 25px;
+  }
+  hr {
+    margin-right: 50px;
+  }
+  nav {
+    line-height: 1.5rem;
+  }
 }
