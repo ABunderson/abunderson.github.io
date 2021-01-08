@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Exo+2&display=swap");
-
+/*color palate https://coolors.co/2a1429-004346-f3cef0-cad2c5-c5e7d3*/
 html {
   background-color: #214e34;
   font-family: "Exo 2", sans-serif;
   margin: 1em auto;
   max-width: 850px;
 }
-h1{
+h1 {
   font-family: "Caveat", sans-serif;
 }
 header {
