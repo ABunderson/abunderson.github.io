@@ -12,7 +12,7 @@ body {
 
 /* header rules here*/
 header {
-  background-color: #17a8e4;
+  background-color: #138a36;
   padding: 1rem 2%;
 }
 header h1 {
@@ -53,7 +53,7 @@ main {
   display: block;
 }
 main h1 {
-  color: #17a8e4;
+  color: #138a36;
 }
 
 main figure img {
@@ -71,7 +71,7 @@ main figcaption {
 footer {
   text-align: center;
   padding: 1rem 2%;
-  background-color: #19a8e4;
+  background-color: #138a36;
 }
 .clearfix:after {
   content: "";
