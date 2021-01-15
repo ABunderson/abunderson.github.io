@@ -1,0 +1,86 @@
+html {
+  font-family: "Exo 2", sans-serif;
+}
+/* header rules */
+header,
+footer {
+  background-color: #331832;
+  color: #cad2c5;
+  padding: 2%;
+  text-align: center;
+}
+h1 {
+  font-family: "Caveat", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* body rules */
+body {
+  font-size: 18px;
+  color: black;
+  border-radius: 20px;
+  background-color: #f3c3f0;
+}
+
+div.page {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+h2 {
+  background-color: #331832;
+  color: #cad2c5;
+  padding: 3%;
+  margin: 0%;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+  width: auto;
+}
+section p,
+section a,
+h3 {
+  padding: 0% 3% 0% 3%;
+}
+h3 {
+  text-align: center;
+}
+.link {
+  text-align: center;
+}
+section p {
+  text-align: justify;
+}
+section {
+  border-style: solid;
+  margin: 2%;
+  border-radius: 20px;
+  background-color: white;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 94%;
+  padding-top: 5%;
+  box-shadow: 0 0 30px black;
+}
+
+/* footer rules */
+#lastupdate {
+  color: white;
+}
+footer a:link,
+footer a:visited {
+  color: #331832;
+  background-color: #f3c3f0;
+  border-radius: 20px;
+  padding: 5px;
+}
+footer a:hover {
+  color: #f3c3f0;
+  background-color: #331832;
+  border-radius: 20px;
+  padding: 7px;
+  border-color: #f3c3f0;
+  border-style: solid;
+}

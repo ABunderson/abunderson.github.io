@@ -1,0 +1,36 @@
+@media only screen and (min-width: 560px) {
+  div.page {
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+  }
+  html {
+    max-width: 85%;
+    margin: auto;
+    background-color: white;
+  }
+  header,
+  footer {
+    border-radius: 20px;
+  }
+  body {
+    padding: 5%;
+    border-style: solid;
+  }
+  section p,
+  section a,
+  h3 {
+    padding: 0% 5% 0% 5%;
+  }
+  h2 {
+    padding: 5%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  img {
+    max-width: 90%;
+  }
+  section {
+    margin: 5%;
+  }
+}

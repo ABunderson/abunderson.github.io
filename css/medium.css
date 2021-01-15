@@ -1,6 +1,6 @@
 @media only screen and (min-width: 32.5em) {
   html {
-    background-color: #214e34;
+    background-color: white;
   }
   header img {
     float: right;
@@ -17,6 +17,7 @@
   body {
     padding: 3rem;
     background-color: #f3c3f0;
+    border-style: solid;
   }
   main {
     margin-left: 25px;
@@ -26,5 +27,8 @@
   }
   nav {
     line-height: 1.5rem;
+  }
+  img {
+    box-shadow: 0 0 30px black;
   }
 }
