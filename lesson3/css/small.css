@@ -1,0 +1,61 @@
+header img {
+    width: 100px;
+}
+/* navigation set up */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+nav ul li {
+    padding: 10px;
+}
+
+
+/*body area rules*/
+body {
+    margin: 10px;
+}
+
+
+/*All of the class changes to make the site plan look right*/
+.main {
+    background-color: #f7fff7;
+    border-style: solid;
+    padding: 10px;
+}
+.nav {
+    background-color: #156066;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    padding: 10px; 
+}
+.header {
+    background-color: #283d4b;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    padding: 10px; 
+}
+.navhover {
+    background-color: #9d9596;
+    border-style: solid;
+    padding: 10px;
+}
+.navactive {
+    background-color: #513f5d;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    padding: 10px; 
+}
+.headtext {
+font-family: "Architects Daughter", sans-serif;
+letter-spacing: 1px;
+}
+.normaltext {
+font-family: "Sarabun", sans-serif;
+}
