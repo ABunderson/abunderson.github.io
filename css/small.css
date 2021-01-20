@@ -48,8 +48,8 @@ nav a:link {
   color: #2a1429;
 }
 nav a:hover {
-  color: #f3c3f0;
-  padding: 0.25em;
+  color: #cad2c5;
+  padding: 5px;
   background-color: #331832;
   border-radius: 15px;
 }
