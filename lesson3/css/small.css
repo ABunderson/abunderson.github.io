@@ -1,22 +1,82 @@
-header img {
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+.logo {
     width: 100px;
+    float: left;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 50px;
+    padding: 5px;
 }
+
 /* navigation set up */
 nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    background-color: #156066;
+    padding: 0;
+    margin: 0;
 }
-nav ul li {
-    padding: 10px;
+nav ul li a{
+    padding: .5rem 0;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+nav a {
+    color: white;
+}
+nav ul li a.active{
+    background-color: #513f5d;
+    color: white;
+}
+nav a:hover {
+    background-color: #9d9596;
 }
 
+/*header area*/
+header, footer{
+    background-color: #283d4b;
+    color: white;
+    padding: .5rem 2%
+}
+header h1 {margin: 0; font-size: 1.5rem;}
+header h2 {margin: 0; font-weight: normal; font-size: .8rem;}
 
 /*body area rules*/
 body {
-    margin: 10px;
+    background-color: #f7fff7;
+    font-family: "Sarabun", sans-serif;
+    font-size: 16px;
+}
+main {
+    margin: 1rem;
+}
+h1, h3 {
+    font-family: "Architects Daughter", sans-serif;
+    letter-spacing: 1px;
+}
+
+/*footer*/
+footer {
+text-align: center;
+}
+footer a {
+    background-color: #156066;
+    color: white; 
+    padding: 5px;
+}
+footer a:hover {
+    background-color: white;
+    color: #156066;
 }
 
 
@@ -58,4 +118,7 @@ letter-spacing: 1px;
 }
 .normaltext {
 font-family: "Sarabun", sans-serif;
+}
+.samplelogo {
+    width: 100px;
 }
