@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64rem) {
 
      header, nav, main, footer {
-        max-width: 64rem;
+        max-width: 75rem;
         margin: auto;
     }
 
