@@ -16,4 +16,29 @@ header h3 {
     font-size: 1.6rem;
   }
 
+/*nav rules */
+nav button {
+  display: none;
+}
+nav ul.hide {
+  display: inline;
+}
+nav ul.primaryNav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+nav ul li {
+  width: 25%;
+}
+nav ul li:first-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li a {
+  border: none;
+  border-bottom: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);  
+  font-size: .8rem;
+}
+
 }

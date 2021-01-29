@@ -33,6 +33,9 @@
     background-color: #f7fff7;
     left: 40px;
   }
+  .heroImage {
+      width: 1024px;
+  }
 
   /*forecast*/
   .forecastTitle {
@@ -80,22 +83,7 @@
   }
 
   /*nav*/
-  nav button {
-    display: none;
-  }
-  nav ul.hide {
-    display: block;
-  }
-  nav ul li {
-    float: left;
-  }
-  nav ul li:first-child {
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-  }
   nav ul li a {
-    border: none;
-    border-bottom: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: 0.8rem 1rem;
     font-size: 1.2rem;
   }
@@ -141,6 +129,5 @@
   .social {    
      padding-left: 50px;
      width: 40%;
-
   }
 }
