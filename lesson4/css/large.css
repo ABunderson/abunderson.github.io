@@ -11,7 +11,8 @@
   nav ul,
   main,
   .head,
-  .contactBottom {
+  .contactBottom,
+  .bottom {
     max-width: 64rem;
     margin: auto;
   }
@@ -34,7 +35,7 @@
     left: 40px;
   }
   .heroImage {
-      width: 1024px;
+    width: 1024px;
   }
 
   /*forecast*/
@@ -83,7 +84,7 @@
   }
 
   /*nav*/
-  nav ul li a {
+  nav ul.primaryNav li a {
     padding: 0.8rem 1rem;
     font-size: 1.2rem;
   }
@@ -99,16 +100,16 @@
     grid-row-start: 1;
   }
   .contact h3 {
-     font-size: 2rem; 
-     line-height: 0;
-     padding-bottom: 20px;
+    font-size: 2rem;
+    line-height: 0;
+    padding-bottom: 20px;
   }
   .map {
     grid-column-start: 1;
     grid-row-start: 1;
   }
   .contact p {
-      padding-left: 15px;
+    padding-left: 15px;
   }
   .mail {
     width: 20px;
@@ -117,17 +118,16 @@
     width: 20px;
   }
   .pin {
-      width: 20px;
-      filter: invert(100%);
-    
+    width: 20px;
+    filter: invert(100%);
   }
-  .social img{
-      filter: invert(100%);
-      padding-right: 50px;
-      width: 100px;
+  .social img {
+    filter: invert(100%);
+    padding-right: 50px;
+    width: 100px;
   }
-  .social {    
-     padding-left: 50px;
-     width: 40%;
+  .social {
+    padding-left: 50px;
+    width: 40%;
   }
 }
