@@ -197,6 +197,10 @@ nav button {
 .map{
   padding-bottom: 1rem;
 }
+iframe {
+  width: 100%;
+  border: none;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
