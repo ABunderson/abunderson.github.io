@@ -1,19 +1,10 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 40rem) {
   /*header*/
   header h1 {
     font-size: 39px;
   }
   header h3 {
-    font-size: 1.4rem;
-  }
-
-  /*contact information*/
-  .contact {
-    margin-left: 4rem;
-  }
-  .contact h3 {
-    padding-bottom: 5px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   /*nav rules */
@@ -38,6 +29,91 @@
     border: none;
     border-bottom: none;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  /*forecast*/
+  .forecastTitle {
+    border: none;
+    background-color: #f7fff7;
+    color: black;
+    text-align: left;
+    padding: .5rem 0rem .5rem .5rem;
+    font-size: 1.5rem;
+    display: block;
+  }
+  .forecast {
+    border: none;
+  }
+  .show {
+    display: inline;
+  }
+  .forecastDays {
+    display: flex;
+    justify-content: space-around;
+  }
+  .day1,
+  .day2,
+  .day3,
+  .day4,
+  .day5 {
+    border: 1px solid black;
+    text-align: center;
+    width: 150px;
+  }
+  .forecastDays h4 {
+    background-color: #283d4b;
+    color: white;
+    padding: 1rem;
+    margin-top: 0;
+    letter-spacing: 2px;
+  }
+  .forecastDays span {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    display: block;
+  }
+
+  /*article*/
+  article {
+    margin-top: 1rem;
+    display: block;
+  }
+  article h3 {
+    font-size: 1.5rem;
+  }
+  article p {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .articleImage {
+    width: 50%;
+    float: right;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  /*contact information*/
+  .contactBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+  }
+
+  .contact {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .contact h3 {
+    font-size: 2rem;
+    line-height: 0;
+    padding-bottom: 20px;
+  }
+  .map {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .contact p {
+    padding-left: 15px;
   }
 }

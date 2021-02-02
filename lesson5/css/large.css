@@ -18,116 +18,26 @@
   }
   main h2 {
     font-size: 3rem;
+    margin: 0;
   }
-  main {
-    position: relative;
-  }
+ .forecastTitle {
+   padding-left: 0;
+ }
+ article {
+   padding-left: 0;
+ }
 
   /*weather summary*/
   .summary {
-    border: 1px solid black;
-    width: 300px;
-    height: 250px;
-    padding: 10px;
-    position: absolute;
     top: 115px;
-    background-color: #f7fff7;
-    left: 40px;
   }
   .heroImage {
     width: 1024px;
-  }
-
-  /*forecast*/
-  .forecastTitle {
-    border: none;
-    background-color: #f7fff7;
-    color: black;
-    text-align: left;
-    padding: 1rem 0rem 1rem 2rem;
-    font-size: 2rem;
-  }
-  .forecast {
-    border: none;
-  }
-  .show {
-    display: inline;
-  }
-  .forecastImage {
-    display: flex;
-    justify-content: space-around;
-    background-color: #344f61;
-    padding: 1rem 0rem 1rem 0rem;
-  }
-  .forecastImage img {
-    width: 100px;
-    border: 2px solid #f7fff7;
-  }
-
-  /*article*/
-  .forecast article {
-    margin-top: 1rem;
-    border: 3px solid black;
-    display: block;
-  }
-  .forecast article h3 {
-    font-size: 1.5rem;
-  }
-  .forecast article p {
-    padding-left: 1rem;
-    padding-right: 40px;
-  }
-  .articleImage {
-    width: 30%;
-    float: right;
-    padding: 1rem 40px 1rem 1rem;
   }
 
   /*nav*/
   nav ul.primaryNav li a {
     padding: 0.8rem 1rem;
     font-size: 1.2rem;
-  }
-
-  /*footer*/
-  .contactBottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 1rem;
-  }
-  .contact {
-    grid-column-start: 2;
-    grid-row-start: 1;
-  }
-  .contact h3 {
-    font-size: 2rem;
-    line-height: 0;
-    padding-bottom: 20px;
-  }
-  .map {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
-  .contact p {
-    padding-left: 15px;
-  }
-  .mail {
-    width: 20px;
-  }
-  .phone {
-    width: 20px;
-  }
-  .pin {
-    width: 20px;
-    filter: invert(100%);
-  }
-  .social img {
-    filter: invert(100%);
-    padding-right: 50px;
-    width: 100px;
-  }
-  .social {
-    padding-left: 50px;
-    width: 40%;
   }
 }

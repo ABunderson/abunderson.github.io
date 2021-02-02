@@ -2,6 +2,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  min-width: 425px;
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -65,31 +66,33 @@ h3 {
 h2 {
   margin-left: 10px;
 }
+main {
+  position: relative;
+}
 
 /*weather summary rules*/
-.summary {
-  margin: 25px;
-}
+  /*weather summary*/
+  .summary {
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    background-color: #f7fff7;
+    left: 40px;
+    opacity: .8;
+  }
 
-/*five day forecast rules*/
-.forecast {
-  border: 3px solid black;
-  margin-bottom: 10px;
-}
-.forecast article {
+/*article rules*/
+
+article {
   padding: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.forecastTitle {
-  background-color: #344f61;
-  color: white;
-  margin: 0;
-  text-align: center;
-  padding: 3rem;
-  border-bottom: 3px solid black;
-}
+
 
 /*nav rules*/
 nav ul.hide {
@@ -152,27 +155,39 @@ nav button {
 
 /*contact information area */
 .contact {
-  margin-left: 3.5rem;
+  margin-left: 0.5rem;
+  margin-right: .5rem;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 .contact h3 {
   padding-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
-.contact p {
-  line-height: 50%;
-}
-.contact p img {
+.contact h4 img {
   margin-right: 1rem;
+  width: 20px
 }
-.mail {
-  width: 30px;
-  filter: invert(100);
+.contactinformation {
+  display: grid;
+  line-height: 30%;
+  grid-template-columns: 1fr 1fr;
 }
-.phone {
-  width: 30px;
-  filter: invert(100%);
+.address {
+  min-width: 160px;
+}
+.social {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.facebook {
+  margin-right: 25px;
+}
+.twitter {
+  margin-left: 25px
+}
+.map{
+  padding-bottom: 1rem;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
