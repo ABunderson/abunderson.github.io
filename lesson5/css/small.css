@@ -1,0 +1,183 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* image rules */
+.logo {
+  width: 100px;
+  float: left;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50px;
+  padding: 5px;
+}
+.heroImage {
+  width: 100%;
+}
+.footerMap {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.articleImage {
+  width: 100%;
+  order: 2;
+}
+
+/*header and footer main area*/
+header,
+footer {
+  background-color: #283d4b;
+  color: white;
+}
+header h3 {
+  line-height: 140%;
+  padding-bottom: 10px;
+}
+
+/*body area rules*/
+body {
+  background-color: #f7fff7;
+  font-family: "Sarabun", sans-serif;
+  font-size: 16px;
+}
+.show {
+  display: none;
+}
+h1,
+h2,
+h3 {
+  font-family: "Architects Daughter", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 10px;
+}
+h2 {
+  margin-left: 10px;
+}
+
+/*weather summary rules*/
+.summary {
+  margin: 25px;
+}
+
+/*five day forecast rules*/
+.forecast {
+  border: 3px solid black;
+  margin-bottom: 10px;
+}
+.forecast article {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.forecastTitle {
+  background-color: #344f61;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 3rem;
+  border-bottom: 3px solid black;
+}
+
+/*nav rules*/
+nav ul.hide {
+  display: none;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  background-color: #156066;
+}
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav a {
+  color: white;
+}
+nav ul li a.active {
+  background-color: #513f5d;
+  color: white;
+}
+nav a:hover {
+  background-color: #9d9596;
+}
+nav button {
+  margin: 0.2rem 2%;
+  background-color: white;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+/*footer*/
+.bottom {
+  text-align: center;
+  padding: 2px;
+  padding-top: 5px;
+}
+.bottom a {
+  background-color: #156066;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.bottom a:hover {
+  background-color: white;
+  color: #156066;
+  border-radius: 5px;
+}
+
+/*contact information area */
+.contact {
+  margin-left: 3.5rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.contact h3 {
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+.contact p {
+  line-height: 50%;
+}
+.contact p img {
+  margin-right: 1rem;
+}
+.mail {
+  width: 30px;
+  filter: invert(100);
+}
+.phone {
+  width: 30px;
+  filter: invert(100%);
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
