@@ -92,7 +92,15 @@ article {
   flex-direction: column;
 }
 
-
+/*message rules*/
+div#message {
+  background-color: #513f5d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+div.showme {display:block;}
+div.hideme {display: none;}
 
 /*nav rules*/
 nav ul.hide {
