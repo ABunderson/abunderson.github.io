@@ -19,9 +19,11 @@ html {
   margin: 10px;
   border-radius: 50px;
   padding: 5px;
+  height: auto;
 }
 .heroImage {
   width: 100%;
+  height: auto;
 }
 .footerMap {
   width: 85%;
@@ -32,6 +34,7 @@ html {
 .articleImage {
   width: 100%;
   order: 2;
+  height: auto;
 }
 
 /*header and footer main area*/
