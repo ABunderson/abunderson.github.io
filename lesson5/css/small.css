@@ -2,7 +2,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  min-width: 425px;
+  
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -25,12 +25,7 @@ html {
   width: 100%;
   height: auto;
 }
-.footerMap {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+
 .articleImage {
   width: 100%;
   order: 2;
@@ -171,6 +166,9 @@ nav button {
   padding-top: 20px;
   padding-bottom: 10px;
 }
+.email {
+  word-wrap: break-word;
+}
 .contact h3 {
   padding-bottom: 10px;
   font-size: 2rem;
@@ -190,6 +188,7 @@ nav button {
 .social {
   text-align: center;
   padding-bottom: 1rem;
+  
 }
 .facebook {
   margin-right: 25px;
@@ -197,13 +196,19 @@ nav button {
 .twitter {
   margin-left: 25px
 }
-.map{
+.map img{
   padding-bottom: 1rem;
+  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
 }
+
+/*iframe
 iframe {
   width: 100%;
   border: none;
-}
+}*/
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
