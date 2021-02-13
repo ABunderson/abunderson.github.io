@@ -96,7 +96,6 @@ p.summarytitle {
 }
 
 /*article rules*/
-
 article {
   padding: 10px;
   display: flex;
@@ -109,6 +108,7 @@ div#message {
   color: white;
   text-align: center;
   padding: 1rem;
+  font-size: 1.2rem;
 }
 div.showme {
   display: block;
