@@ -56,3 +56,14 @@
       margin-left: 50px;
     }
 }
+/*gallery*/
+/*.gallery {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery figcaption {
+  text-align: center;
+  display: block;
+}
+.gallery img {
+  box-shadow: 0 0 10px black;
+}*/

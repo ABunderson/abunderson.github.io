@@ -226,6 +226,26 @@ iframe {
   border: none;
 }*/
 
+/*gallery page rules*/
+/*.gallery {
+display: grid;
+padding-top: 20px;
+padding-bottom: 20px;
+gap: 20px;
+grid-template-columns: repeat(auto-fill, minmax(303px, 1fr));
+}*/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+.gallery figcaption {
+  display: none;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
