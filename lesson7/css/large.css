@@ -55,15 +55,30 @@
     .twitter {
       margin-left: 50px;
     }
-}
+
 /*gallery*/
-/*.gallery {
+.gallery {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .gallery figcaption {
   text-align: center;
   display: block;
+  background-color: #156066;
+  color: white;
+  padding : 3px;
+ border: 1px solid black; 
+}
+.gallery picture {
+  box-shadow: 0 0 10px black;
+  
+}
+.gallery picture:hover{
+  box-shadow: 0 0 20px black;
 }
 .gallery img {
-  box-shadow: 0 0 10px black;
-}*/
+  display: block;
+}
+.gallery img:hover {
+  box-shadow: none;
+}
+}

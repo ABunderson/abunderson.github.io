@@ -134,9 +134,13 @@ p.summarytitle {
   .contact p {
     padding-left: 15px;
   }
-}
 
 /*gallery*/
 .gallery {
   grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+}
+
