@@ -81,4 +81,7 @@
 .gallery img:hover {
   box-shadow: none;
 }
+.gallery-social {
+  padding-top: 110px;
+}
 }
