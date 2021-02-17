@@ -1,8 +1,10 @@
+// get all imgs with data-src attribute
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
+// optional parameters being set for the IntersectionalObserver
 const imgOptions = {
-  threshold: 0.5,
-  rootMargin: "0px 0px 50px 0px",
+  threshold: 1,
+  rootMargin: "0px 0px -50px 0px",
 };
 
 const loadImages = (image) => {
@@ -12,6 +14,7 @@ const loadImages = (image) => {
   };
 };
 
+// first check to see if Intersection Observer is supported
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
@@ -21,11 +24,41 @@ if ("IntersectionObserver" in window) {
       }
     });
   }, imgOptions);
+
+  // loop through each img and check status and load if necessary
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });
 } else {
+  //just load All images if not supported
   imagesToLoad.forEach((img) => {
     loadImages(img);
   });
 }
+
+
+// toLocaleDateString Current date JavaScript
+const daynames = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+];
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
+const todaysdate = new Date();
+const dayName = daynames[todaysdate.getDay()];
+const monthName = months[todaysdate.getMonth()];
+const year = todaysdate.getFullYear();
+const currentdate = dayName + ", " + todaysdate.getDate() + " " + monthName + " " + year;
+const options = {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'};
+document.getElementById("currentdate").textContent = currentdate;
