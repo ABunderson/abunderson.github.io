@@ -24,10 +24,3 @@ const currentdate = dayName + ", " + todaysdate.getDate() + " " + monthName + " 
 const options = {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'};
 document.getElementById("currentdate").textContent = currentdate;
 
-WebFont.load({
-    google: {
-      families: [
-         'Architects Daughter, Sarabun'
-      ]
-    }
-  });
