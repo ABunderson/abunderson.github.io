@@ -1,0 +1,37 @@
+div {
+    display: grid;
+    justify-content: center;
+}
+header, footer {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+}
+footer a {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    background-color: blue;
+    color: white;
+
+}
+
+header {
+    padding: 10px; 
+}
+
+img[src*="placeholder"]{
+    filter: blur(.5em);
+}
+
+img {
+    margin-top: 20px;
+    transition: filter 1s;
+    box-shadow: 0 0 30px black;
+}

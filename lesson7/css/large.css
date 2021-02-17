@@ -1,0 +1,58 @@
+@media only screen and (min-width: 64rem) {
+  /*header*/
+  header h1 {
+    font-size: 3rem;
+  }
+
+  /*body*/
+  nav ul,
+  main,
+  .head,
+  .contactBottom,
+  .bottom {
+    max-width: 64rem;
+    margin: auto;
+  }
+
+ .forecastTitle {
+   padding-left: 0;
+ }
+ article {
+   padding-left: 0;
+ }
+
+  /*weather summary*/
+
+  .heroImage {
+    width: 1024px;
+  }
+
+  /*forecast*/
+  .day1 img,
+  .day2 img,
+  .day3 img,
+  .day4 img,
+  .day5 img {
+    width: 75px;
+  }
+
+  /*nav*/
+  nav ul.primaryNav li a {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+  }
+  .map
+    {
+      max-width: 100%;
+      padding-bottom: 0;
+    }
+    .social img {
+      width: 75px;
+    }
+    .facebook {
+      margin-right: 50px;
+    }
+    .twitter {
+      margin-left: 50px;
+    }
+}
