@@ -9,7 +9,9 @@ const imgOptions = {
 
 const loadImages = (image) => {
   image.setAttribute("src", image.getAttribute("data-src"));
-  image.onload = () => {image.removeAttribute("data-src");};
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
 };
 
 // first check to see if Intersection Observer is supported
