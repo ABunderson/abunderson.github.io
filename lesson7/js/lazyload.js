@@ -3,8 +3,8 @@ const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 // optional parameters being set for the IntersectionalObserver
 const imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px -100px 0px",
+  threshold: 1,
+  rootMargin: "0px 0px -50px 0px",
 };
 
 const loadImages = (image) => {
