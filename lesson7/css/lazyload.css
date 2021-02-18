@@ -9,9 +9,10 @@ img[src*="placeholder"] {
 
 img {
   margin-top: 20px;
-  transition: filter 1s;
+  transition: filter 2s;
   box-shadow: 0 0 30px black;
 }
+
 header,
 footer {
   background-color: cornflowerblue;
