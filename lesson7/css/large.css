@@ -59,6 +59,8 @@
 /*gallery*/
 .gallery {
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 10 0 0 0;
+  gap: 30px
 }
 .gallery figcaption {
   text-align: center;
@@ -66,7 +68,7 @@
   background-color: #156066;
   color: white;
   padding : 3px;
- border: 1px solid black; 
+  border: 1px solid black; 
 }
 .gallery figure {
   box-shadow: 0 0 10px black;
