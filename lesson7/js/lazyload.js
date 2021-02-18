@@ -23,7 +23,7 @@ if ('IntersectionObserver' in window) {
         imgObserver.unobserve(item.target);
       }
     });
-  });
+  });// add , imgOptions after the curly brackets to use imgOptions
 
   // loop through each img and check status and load if necessary
   imagesToLoad.forEach((img) => {
