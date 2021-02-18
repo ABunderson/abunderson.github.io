@@ -3,7 +3,7 @@ main {
   justify-content: center;
 }
 
-img[src*="placeholder"] {
+img[data-src] {
   filter: blur(0.5em);
 }
 
