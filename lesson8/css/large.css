@@ -59,7 +59,7 @@
 /*gallery*/
 .gallery {
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 10 0 0 0;
+  padding: 10px 0 0 0;
   gap: 30px
 }
 .gallery figcaption {
