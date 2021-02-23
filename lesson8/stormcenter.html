@@ -2,10 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Weather Falls Idaho Storm Center."
-    />
+    <meta name="description" content="Weather Falls Idaho Storm Center." />
     <meta name="author" content="Adrienne Bunderson" />
     <title>Weather Falls-Storm Center</title>
 
@@ -26,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Sarabun&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -37,9 +34,9 @@
           alt="Weather Falls Idaho Logo. A cloud with a sun peaking from behind it and lighting below."
         />
         <h1>Weather Falls Idaho</h1>
-        <h3 class="clearfix">
+        <h2 class="clearfix">
           Bringing relevant information before the storm falls
-        </h3>
+        </h2>
       </div>
     </header>
     <nav class="clearfix">
@@ -54,55 +51,169 @@
       </ul>
     </nav>
     <main>
-      
-      
-   
- 
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>User Information</legend>
+          <label class="top"
+            >Full Name*
+            <input
+              type="text"
+              name="name"
+              pattern="[A-Za-z ]+"
+              minlength="5"
+              required
+              placeholder="First Last"
+          /></label>
+          <label class="top"
+            >Email
+            <input type="email" name="email" placeholder="someone@gmail.com"
+          /></label>
+          <label class="top"
+            >Phone Number*
+            <input type="tel" name="phone" placeholder="1235551234" required
+          /></label>
+          <label class="top"
+            >Zip Code* <input type="number" name="zip" required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Information</legend>
+          <label class="top"
+            >Storm Date <input type="date" name="stormDate"
+          /></label>
+          <label class="top"
+            >Storm Type <input list="stormType" name="stormType" />
+          </label>
+          <datalist id="stormType">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+
+          <label class="slide"
+            >Storm Severity (1-10): &nbsp;&nbsp;&nbsp;
+            <input
+              type="range"
+              id="severity"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="severityAmount"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+              name="severity"
+            />
+            <span id="severityValue">5</span>
+          </label>
+
+          <datalist id="severityAmount">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <label class="top"
+            >Storm Region
+            <select name="region">
+              <option value="">Select Region</option>
+              <option value="fishHaven">Fish Haven</option>
+              <option value="preston">Preston</option>
+              <option value="Soda Springs">Soda Springs</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Danger Level</legend>
+          <div>Current In-Danger Level</div>
+          <label class="sbs"
+            ><input type="radio" name="danger" value="yes" /> Yes</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="danger" value="maybe" /> Maybe</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="danger" value="no" /> No</label
+          >
+
+          <label class="top"
+            >Additional Information or Comments:
+            <textarea name="comments"></textarea>
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Get Storm Information" class="submitButton" />
+      </form>
+
       <div class="contactBottom">
         <div class="contact">
           <h3>Contact Information</h3>
           <div class="contactinformation">
-          <div class="address">
-          <h4><img
-              class="pin"
-              src="images/pinLogo.png"
-              alt="picture of a location pin"
-            />Address:</h4>
-          <p>
-           
-            Weather Falls Idaho</p><p>98 W 2nd N St,</p><p> Preston, ID 83263
-          </p>
-          </div>
-          <div class="emailphone">
-          <h4><img
-              class="mail"
-              src="images/mailLogo.png"
-              alt="picture of a letter"
-            />Email:</h4>
-          <p class="email">
-            contactus@weatherfalls.com
-          </p>
-                    <h4><img
-              class="phone"
-              src="images/phoneLogo.png"
-              alt="picture of a phone"
-            />Phone:</h4>
-          <p>
-            (999) 999-9999
-          </p>
+            <div class="address">
+              <h4>
+                <img
+                  class="pin"
+                  src="images/pinLogo.png"
+                  alt="picture of a location pin"
+                />Address:
+              </h4>
+              <p>Weather Falls Idaho</p>
+              <p>98 W 2nd N St,</p>
+              <p>Preston, ID 83263</p>
+            </div>
+            <div class="emailphone">
+              <h4>
+                <img
+                  class="mail"
+                  src="images/mailLogo.png"
+                  alt="picture of a letter"
+                />Email:
+              </h4>
+              <p class="email">contactus@weatherfalls.com</p>
+              <h4>
+                <img
+                  class="phone"
+                  src="images/phoneLogo.png"
+                  alt="picture of a phone"
+                />Phone:
+              </h4>
+              <p>(999) 999-9999</p>
+            </div>
           </div>
         </div>
+        <div class="social">
+          <img
+            src="images/facebookLogo.png"
+            alt="facebook logo"
+            class="facebook"
+          />
+          <img
+            src="images/instagramLogo.png"
+            alt="instagram logo"
+            class="instagram"
+          />
+          <img
+            src="images/twitterLogo.png"
+            alt="twitter logo"
+            class="twitter"
+          />
+        </div>
       </div>
-          <div class="social">
-            <img src="images/facebookLogo.png" alt="facebook logo" class="facebook" />
-            <img src="images/instagramLogo.png" alt="instagram logo" class="instagram" />
-            <img src="images/twitterLogo.png" alt="twitter logo" class="twitter"/>
-          </div>
+    </main>
 
-       </div>
-      </main>
-       
-      <footer>
+    <footer>
       <div class="bottom clearfix">
         <p>
           &copy; 2021 | Adrienne R. Bunderson |

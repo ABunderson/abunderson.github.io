@@ -23,7 +23,7 @@ html {
 .heroImage {
   margin: 0;
 }
-.heroImage img{
+.heroImage img {
   width: 100%;
   height: auto;
 }
@@ -213,7 +213,6 @@ nav button {
   margin-left: 25px;
 }
 .map img {
-  
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -228,14 +227,13 @@ iframe {
 
 /*gallery page rules*/
 .gallery {
-display: grid;
-padding-top: 20px;
-padding-bottom: 20px;
-grid-template-columns: 1fr;
-text-align: center;
-gap: 20px
+  display: grid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 20px;
 }
-
 
 .gallery img {
   max-width: 100%;
@@ -254,6 +252,75 @@ gap: 20px
 
 .gallery img[data-src] {
   filter: blur(0.5em);
+}
+
+/*-----Storm Center-----*/
+
+form fieldset {
+  margin: 2rem 0.5rem;
+  border: 1px solid #283d4b;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+
+form legend {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+form label.top,
+form label.slide {
+  display: block;
+  padding-top: 1rem;
+}
+
+form label.slide input {
+  display: block;
+  width: 100%;
+  max-width: 25rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  display: block;
+  border: solid 1px #513f5d;
+  border-radius: 15px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 25rem;
+  background-color: #9d9596;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.25rem 0;
+}
+
+::placeholder {
+  color: #e3e7e3;
+}
+
+form input.submitButton {
+  border: none;
+  background-color: #283d4b;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  margin: 0 0 2rem 1.5rem;
+  width: 96%;
+  max-width: 25rem;
+  font-size: 1.5rem;
+}
+
+/*thank you page storm center submit*/
+
+.thanks {
+  text-align: center;
+}
+figure.thanks img {
+  width: 100%;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
