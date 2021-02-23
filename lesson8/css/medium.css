@@ -142,4 +142,34 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  /*stormcenter*/
+  .dangerLevel,
+  form label.sbs,
+  form label.slide,
+  form label.top {
+    font-size: 1.2rem;
+  }
+  .dangerLevel {
+    padding-top: 1rem;
+  }
+
+  form label.slide input,
+  form label.top input,
+  form label.top textarea,
+  form label.top select {
+    max-width: 25rem;
+  }
+  form legend {
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+  }
+  textarea {
+    height: 150px;
+  }
+  form input.submitButton {
+    max-width: 25rem;
+    font-size: 1.6rem;
+  }
 }
