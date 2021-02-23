@@ -92,7 +92,10 @@
   form label.sbs {
     padding-left: 50px;
   }
-
+  form label.slide,
+  form label.top {
+    padding-top: 1.5rem;
+  }
   form label.slide input,
   form label.top input,
   form label.top textarea,
