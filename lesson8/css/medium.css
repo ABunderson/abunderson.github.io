@@ -150,9 +150,6 @@
   form label.top {
     font-size: 1.2rem;
   }
-  .dangerLevel {
-    padding-top: 1rem;
-  }
 
   form label.slide input,
   form label.top input,
@@ -162,8 +159,8 @@
   }
   form legend {
     margin: 0 1rem;
-    padding: 0 0.5rem;
     font-size: 1.6rem;
+    padding: 0.7rem;
   }
   textarea {
     height: 150px;

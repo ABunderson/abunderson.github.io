@@ -51,9 +51,10 @@
       </ul>
     </nav>
     <main>
+      <h1 class="stormhead">Report a Storm</h1>
       <form method="get" action="thanks.html">
         <fieldset>
-          <legend>User Information</legend>
+          <legend>Contact Information</legend>
           <label class="top"
             >Full Name*
             <input
@@ -73,7 +74,7 @@
             <input type="tel" name="phone" placeholder="### ### ####" required
           /></label>
           <label class="top"
-            >Zip Code* <input type="number" name="zip" required
+            >Zip Code* <input type="number" name="zip" placeholder="#####" required
           /></label>
         </fieldset>
 
@@ -133,20 +134,23 @@
               <option value="Soda Springs">Soda Springs</option>
             </select>
           </label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Danger Level</legend>
-          <div class="dangerLevel">Current In-Danger Level</div>
+          <div class="dangerLevel">Are you in Danger?</div>
           <label class="sbs"
             ><input type="radio" name="danger" value="yes" /> Yes</label
+          >
+                    <label class="sbs"
+            ><input type="radio" name="danger" value="no" /> No</label
           >
           <label class="sbs"
             ><input type="radio" name="danger" value="maybe" /> Maybe</label
           >
-          <label class="sbs"
-            ><input type="radio" name="danger" value="no" /> No</label
-          >
+
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Useful Information</legend>
+
 
           <label class="top"
             >Additional Information or Comments:
@@ -156,7 +160,7 @@
 
         <input
           type="submit"
-          value="Get Storm Information"
+          value="Report Storm"
           class="submitButton"
         />
       </form>
