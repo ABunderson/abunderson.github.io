@@ -24,6 +24,7 @@ fetch(requestURL)
         //image 
       image.setAttribute("src", prophets[i].imageurl);
       image.setAttribute("alt", "Picture of the prophet " + prophets[i].name + " " + prophets[i].lastname);
+      image.setAttribute('loading', 'lazy');
 
       //birth place
       birthPlace.textContent = "Place of birth: " + prophets[i].birthplace;
