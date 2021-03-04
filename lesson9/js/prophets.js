@@ -7,7 +7,9 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const prophets = jsonObject["prophets"];
-    for (let i = 0; i < prophets.length; i++) {
+    const cards = document.querySelector(".cards");
+
+    prophets.forEach((prophet) => {
       let card = document.createElement("section");
       let h2 = document.createElement("h2");
       let image = document.createElement("img");
@@ -15,37 +17,39 @@ fetch(requestURL)
       let birthPlace = document.createElement("p");
       let deathDate = document.createElement("p");
       let timeProphet = document.createElement("p");
-      
 
-//Title
-      h2.textContent = prophets[i].name + " " + prophets[i].lastname;
+      //Title
+      h2.innerHTML = `${prophet.name}  ${prophet.lastname}`;
 
-        //image 
-      image.setAttribute("src", prophets[i].imageurl);
-      image.setAttribute("alt", "Picture of the prophet " + prophets[i].name + " " + prophets[i].lastname);
-      image.setAttribute('loading', 'lazy');
+      //image
+      image.setAttribute("src", `${prophet.imageurl}`);
+      image.setAttribute(
+        "alt",
+        `Picture of the prophet 
+          ${prophet.name} 
+          ${prophet.lastname}`
+      );
+      image.setAttribute("loading", "lazy");
 
       //birth place
-      birthPlace.textContent = "Place of birth: " + prophets[i].birthplace;
+      birthPlace.innerHTML = `Place of birth: ${prophet.birthplace}`;
 
       //birth date
-      birthDate.textContent = "Date of birth: " + prophets[i].birthdate;
+      birthDate.innerHTML = `Date of birth: ${prophet.birthdate}`;
 
       //death date
-      deathDate.textContent = "Date of death: " + prophets[i].death;
+      deathDate.innerHTML = `Date of death: ${prophet.death}`;
 
       //time they were a prophet
-      timeProphet.textContent = "Years spent as a prophet: " + prophets[i].length;
-
-
-      document.querySelector("div.cards").appendChild(card);
+      timeProphet.innerHTML = `Years spent as a prophet: ${prophet.length}`;
 
       //add to the card
-      card.appendChild(h2);
+      cards.append(card);
+      card.append(h2);
       card.appendChild(image);
       card.appendChild(birthPlace);
       card.appendChild(birthDate);
       card.appendChild(deathDate);
       card.appendChild(timeProphet);
-    }
+    });
   });
