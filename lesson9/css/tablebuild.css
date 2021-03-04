@@ -1,0 +1,47 @@
+main,
+footer,
+header {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+table,
+caption {
+  box-shadow: 10px 10px 10px #628ca6;
+}
+caption {
+  font-size: 1.6rem;
+  background-color: #7fb9c2;
+  font-weight: bold;
+}
+td,
+th,
+caption {
+  padding: 7px;
+  border: 1px solid lightgray;
+}
+tfoot tr td {
+  font-size: 0.7rem;
+  background-color: #7fb9ca;
+}
+thead tr th {
+  background-color: #628ca6;
+  color: white;
+  letter-spacing: 1px;
+}
+tr:nth-child(even) {
+  background-color: #e7ffed;
+}
+tr:nth-child(odd) {
+  background-color: #e7f0ed;
+}
+.novSalesGoal {
+  background-color: #628ca6;
+  color: white;
+}
+tr:nth-child(5) :first-child {
+  font-style: italic;
+}

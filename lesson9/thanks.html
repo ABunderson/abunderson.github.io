@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Weather Falls Idaho Home page."
+    />
+    <meta name="author" content="Adrienne Bunderson" />
+    <title>Weather Falls-Home Page</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Sarabun&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <img
+          class="logo"
+          src="images/weather_falls_idaho_logo.png"
+          alt="Weather Falls Idaho Logo. A cloud with a sun peaking from behind it and lighting below."
+        />
+        <h1>Weather Falls Idaho</h1>
+        <h3 class="clearfix">
+          Bringing relevant information before the storm falls
+        </h3>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNavId" class="primaryNav hide">
+        <li><a  href="home.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="thanks">Thank you for giving us information on current storms.</h1>
+      <figure class="thanks">
+        <img
+          src="images/thanksLightning.jpg"
+          alt="Lightning strike. Photo by Andre Furtado from Pexels"
+        />
+      </figure>
+   
+ 
+      <div class="contactBottom">
+        <div class="contact">
+          <h3>Contact Information</h3>
+          <div class="contactinformation">
+          <div class="address">
+          <h4><img
+              class="pin"
+              src="images/pinLogo.png"
+              alt="picture of a location pin"
+            />Address:</h4>
+          <p>
+           
+            Weather Falls Idaho</p><p>98 W 2nd N St,</p><p> Preston, ID 83263
+          </p>
+          </div>
+          <div class="emailphone">
+          <h4><img
+              class="mail"
+              src="images/mailLogo.png"
+              alt="picture of a letter"
+            />Email:</h4>
+          <p class="email">
+            contactus@weatherfalls.com
+          </p>
+                    <h4><img
+              class="phone"
+              src="images/phoneLogo.png"
+              alt="picture of a phone"
+            />Phone:</h4>
+          <p>
+            (999) 999-9999
+          </p>
+          </div>
+        </div>
+      </div>
+          <div class="social">
+            <img src="images/facebookLogo.png" alt="facebook logo" class="facebook" />
+            <img src="images/instagramLogo.png" alt="instagram logo" class="instagram" />
+            <img src="images/twitterLogo.png" alt="twitter logo" class="twitter"/>
+          </div>
+
+       </div>
+      </main>
+       
+      <footer>
+      <div class="bottom clearfix">
+        <p>
+          &copy; 2021 | Adrienne R. Bunderson |
+          <span id="currentdate"></span>
+        </p>
+        <p><a href="../index.html">Main Page</a></p>
+      </div>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/saturdaybanner.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
+</html>
