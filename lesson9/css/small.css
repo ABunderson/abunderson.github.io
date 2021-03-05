@@ -344,7 +344,6 @@ figure.thanks img {
   max-width: 100%;
   border-radius: 0 0 30px 30px;
   display: block;
-  border-top: 3px solid #283d4b;
 }
 
 .cardshome section {
@@ -381,6 +380,27 @@ figure.thanks img {
 }
 
 
+.extrahome {
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 30px;
+}
+.extrahome h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.extrahome img {
+  max-width: 100%;
+  display: block;
+}
+.homepic2 img{
+  border-radius: 0 0 30px 30px;
+}
+
+.extrahome p {
+  padding: 10px;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

@@ -232,4 +232,42 @@
     border-bottom: 1px solid #283d4b;
   }
 
+  .extrahome {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .extrahome h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .homepic1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+  }
+  .homepic1 img {
+    border-radius: 30px 0 0 30px;
+  }
+
+  .homepic2 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .homepic2 img {
+    border-radius: 0 30px 30px 0;
+  }
+  .extrahome p {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding-right: 10px;
+    text-align: center;
+    padding-top: 0;
+  }
+
 }

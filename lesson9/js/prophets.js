@@ -46,10 +46,10 @@ fetch(requestURL)
       //add to the card
       cards.append(card);
       card.append(h2);
-      card.appendChild(image);
-      card.appendChild(birthPlace);
-      card.appendChild(birthDate);
-      card.appendChild(deathDate);
-      card.appendChild(timeProphet);
+      card.append(image);
+      card.append(birthPlace);
+      card.append(birthDate);
+      card.append(deathDate);
+      card.append(timeProphet);
     });
   });

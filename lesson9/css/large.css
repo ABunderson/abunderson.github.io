@@ -136,11 +136,10 @@
   .cardshome img,
   .cardshome section:nth-child(even) img {
     border-radius: 0 0 30px 30px;
-    border-top: 3px solid #283d4b;
   }
 
   .cardshome section:nth-child(even) h3, .cardshome section:first-child h3 {
-    padding-bottom: 31px;
+    padding-bottom: 32px;
   }
 
   .cardshome p {
@@ -149,7 +148,8 @@
   .cardshome .data, .cardshome section:nth-child(even) .data {
      border-radius: 0;
      border-bottom: none;
-
-    
+  }
+  .extrahome p {
+    font-size: 1.2rem;
   }
 }
