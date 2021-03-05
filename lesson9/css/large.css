@@ -124,7 +124,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .cardshome section {
+  .cardshome section a{
     display: block;
   }
 

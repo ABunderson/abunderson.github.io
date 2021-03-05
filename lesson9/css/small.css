@@ -372,6 +372,11 @@ figure.thanks img {
   background-color: #283d4b;  
 }
 
+.cardshome a {
+  text-decoration: none;
+  color: black;
+}
+
 .data {
   display: flex;
   justify-content: space-around;

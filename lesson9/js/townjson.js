@@ -6,8 +6,6 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject["towns"];
-    console.log(jsonObject);
-    console.log(towns);
 
     const cards = document.querySelector(".cardshome");
 
@@ -26,6 +24,7 @@ fetch(requestURL)
       let population = document.createElement("p");
       let rain = document.createElement("p");
       let data = document.createElement("div");
+      let connect = document.createElement("a");
 
       title.innerHTML = `${town.name}`;
       motto.innerHTML = `${town.motto}`;
@@ -35,20 +34,23 @@ fetch(requestURL)
 
       data.setAttribute("class", `data`);
 
+      let location = `${town.photo}`;
+      let loco = location.replace("jpg", "html");
+
+      connect.setAttribute("href", loco);
+
       image.setAttribute("src", `images/${town.photo}`);
-      image.setAttribute(
-        "alt",
-        `Picture of ${town.name}, Idaho`
-      );
+      image.setAttribute("alt", `Picture of ${town.name}, Idaho`);
       image.setAttribute("loading", "lazy");
 
-      card.append(title);
-      card.append(motto);
-      card.append(data);
+      connect.append(title);
+      connect.append(motto);
+      connect.append(data);
       data.append(year);
       data.append(population);
-      data.append(rain);      
-      card.append(image);
+      data.append(rain);
+      connect.append(image);
+      card.append(connect);
       cards.append(card);
     });
   });
