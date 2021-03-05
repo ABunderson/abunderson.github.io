@@ -139,7 +139,7 @@
   }
 
   .cardshome section:nth-child(even) h3, .cardshome section:first-child h3 {
-    padding-bottom: 32px;
+    padding-bottom: 31px;
   }
 
   .cardshome p {
