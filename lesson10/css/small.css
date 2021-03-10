@@ -99,7 +99,7 @@ p.summarytitle {
 .summarydata {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  line-height: .8rem;
+  line-height: 0.8rem;
 }
 .col1 {
   text-align: right;
@@ -348,7 +348,7 @@ figure.thanks img {
 }
 
 /* Home Page*/
-.homeHero img{
+.homeHero img {
   max-width: 100%;
   padding-top: 10px;
 }
@@ -380,9 +380,10 @@ figure.thanks img {
   padding-bottom: 10px;
 }
 
-.cardshome h2, .cardshome h3 {
+.cardshome h2,
+.cardshome h3 {
   color: white;
-  background-color: #283d4b;  
+  background-color: #283d4b;
 }
 
 .cardshome a {
@@ -396,7 +397,6 @@ figure.thanks img {
   border-right: 1px solid #283d4b;
   border-left: 1px solid #283d4b;
 }
-
 
 .extrahome {
   border: 1px solid black;
@@ -412,7 +412,7 @@ figure.thanks img {
   max-width: 100%;
   display: block;
 }
-.homepic2 img{
+.homepic2 img {
   border-radius: 0 0 30px 30px;
 }
 

@@ -28,7 +28,7 @@
   }
 
   /*forecast*/
-.forecastDays img {
+  .forecastDays img {
     width: 75px;
   }
 
@@ -120,7 +120,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .cardshome section a{
+  .cardshome section a {
     display: block;
   }
 
@@ -134,16 +134,18 @@
     border-radius: 0 0 30px 30px;
   }
 
-  .cardshome section:nth-child(even) h3, .cardshome section:first-child h3 {
+  .cardshome section:nth-child(even) h3,
+  .cardshome section:first-child h3 {
     padding-bottom: 31px;
   }
 
   .cardshome p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
-  .cardshome .data, .cardshome section:nth-child(even) .data {
-     border-radius: 0;
-     border-bottom: none;
+  .cardshome .data,
+  .cardshome section:nth-child(even) .data {
+    border-radius: 0;
+    border-bottom: none;
   }
   .extrahome p {
     font-size: 1.2rem;

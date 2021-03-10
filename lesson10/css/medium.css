@@ -77,13 +77,13 @@
     display: flex;
     justify-content: space-around;
   }
-.forecastDays div {
+  .forecastDays div {
     border: 1px solid black;
     text-align: center;
     width: 150px;
     box-shadow: 0 0 20px #156066;
   }
-.forecastDays img{
+  .forecastDays img {
     width: 50px;
   }
   .forecastDays h4 {
