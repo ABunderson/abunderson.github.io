@@ -58,47 +58,8 @@
   }
 
   /*forecast*/
-  .forecastTitle {
-    border: none;
-    background-color: #f7fff7;
-    color: black;
-    text-align: left;
-    padding: 0.5rem 0rem 0.5rem 0.5rem;
-    font-size: 1.5rem;
-    display: block;
-  }
-  .forecast {
-    border: none;
-  }
-  .show {
-    display: inline;
-  }
-  .forecastDays {
-    display: flex;
-    justify-content: space-around;
-  }
-  .forecastDays div {
-    border: 1px solid black;
-    text-align: center;
-    width: 150px;
-    box-shadow: 0 0 20px #156066;
-  }
-  .forecastDays img {
-    width: 50px;
-  }
-  .forecastDays h4 {
-    background-color: #283d4b;
-    color: white;
-    padding: 1rem;
-    margin-top: 0;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-  }
-  .forecastDays span {
-    margin-bottom: 0.8rem;
-    font-size: 1rem;
-    margin-top: 0;
-    display: block;
+  .forecast div {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   /*article*/
@@ -139,6 +100,12 @@
   }
   .contact p {
     padding-left: 15px;
+  }
+
+  .contactinformation {
+    display: grid;
+    line-height: 30%;
+    grid-template-columns: 1fr 1fr;
   }
 
   /*gallery*/

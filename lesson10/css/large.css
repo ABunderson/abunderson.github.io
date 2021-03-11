@@ -16,6 +16,7 @@
 
   .forecastTitle {
     padding-left: 0;
+    padding-bottom: 15px;
   }
   article {
     padding-left: 0;
@@ -28,8 +29,8 @@
   }
 
   /*forecast*/
-  .forecastDays img {
-    width: 75px;
+  .forecast div {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
   /*nav*/

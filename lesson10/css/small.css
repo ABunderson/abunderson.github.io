@@ -170,6 +170,46 @@ nav button {
   margin: 0;
 }
 
+/*5-day forecast*/
+.forecastTitle {
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+}
+.forecast div {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  row-gap: 20px;
+}
+.forecast div div {
+  box-shadow: 0 0 20px #156066;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0;
+}
+.forecast img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.forecast h4 {
+  background-color: #283d4b;
+  color: white;
+  padding: 1rem;
+  margin-top: 0;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.forecast span {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  margin-top: 0;
+  display: block;
+}
+
 /*footer*/
 .bottom {
   text-align: center;
@@ -196,18 +236,14 @@ nav button {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.email {
-  word-wrap: break-word;
-}
 
 .contact h4 img {
   margin-right: 1rem;
   width: 20px;
 }
 .contactinformation {
-  display: grid;
   line-height: 30%;
-  grid-template-columns: 1fr 1fr;
+  text-align: center;
 }
 .address {
   min-width: 160px;

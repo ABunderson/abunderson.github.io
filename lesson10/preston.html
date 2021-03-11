@@ -67,16 +67,22 @@
       <div class="summary">
         <p class="summarytitle">Weather Summary</p>
         <div class="summarydata">
-        <p class="col1">Currently: </p><p class="line2"><span id="current"></span>&deg;F</p>
-        <p class="col1">High: </p><p><span id="hightemp"></span>&deg;F</p>
-        <p class="col1">Wind Chill: </p><p><span id="chill"></span></p>
-        <p class="col1">Humidity: </p><p><span id="humid"></span>%</p>
-        <p class="col1">Wind Speed: </p><p><span id="speed"></span> mph</p>
+          <p class="col1">Currently:</p>
+          <p class="line2"><span id="current"></span>&deg;F</p>
+          <p class="col1">High:</p>
+          <p><span id="hightemp"></span>&deg;F</p>
+          <p class="col1">Wind Chill:</p>
+          <p><span id="chill"></span></p>
+          <p class="col1">Humidity:</p>
+          <p><span id="humid"></span>%</p>
+          <p class="col1">Wind Speed:</p>
+          <p><span id="speed"></span> mph</p>
         </div>
       </div>
-      <div class="forecast show">
-        <h2 class="forecastTitle">Five Day Forecast</h2>
-        <div id="forecastDays" class="forecastDays"></div>
+
+      <h2 class="forecastTitle">Five Day Forecast</h2>
+      <div class="forecast">
+        <div id="forecastDays"></div>
       </div>
       <article>
         <h2>Article Title</h2>
@@ -173,7 +179,10 @@
           &copy; 2021 | Adrienne R. Bunderson |
           <span id="currentdate"></span>
         </p>
-        <p>Weather information from: <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p>
+          Weather information from:
+          <a href="https://openweathermap.org/">OpenWeatherMap</a>
+        </p>
         <p><a href="../index.html">Main Page</a></p>
       </div>
     </footer>
@@ -181,7 +190,7 @@
     <script src="js/currentdate.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/saturdaybanner.js"></script>
-    
+
     <!--<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>-->
   </body>
 </html>
