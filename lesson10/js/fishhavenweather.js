@@ -12,7 +12,7 @@ weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
 const apifURL =
-  "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ed322eeeaba3fbf6a615b4175fa51fdf&units=imperial";
+  "//api.openweathermap.org/data/2.5/forecast?id=5585010&appid=ed322eeeaba3fbf6a615b4175fa51fdf&units=imperial";
 fetch(apifURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
@@ -62,7 +62,7 @@ fetch(apifURL)
   });
 
 const apiURL =
-  "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ed322eeeaba3fbf6a615b4175fa51fdf&units=imperial";
+  "//api.openweathermap.org/data/2.5/weather?id=5585010&appid=ed322eeeaba3fbf6a615b4175fa51fdf&units=imperial";
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
