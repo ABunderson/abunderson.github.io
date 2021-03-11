@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Sarabun&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -53,67 +53,135 @@
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
+
     <main>
-      
-      
-   
- 
+      <h1>Soda Springs Idaho</h1>
+      <picture class="heroImage">
+        <source media="(max-width: 640px)" srcset="images/sodasprings.jpg" />
+        <img src="images/largesodasprings.jpg" alt="picture of Soda Springs Idaho. Photo by Pixabay from Pexels." />
+      </picture>
+      <div class="summary">
+        <p class="summarytitle">Weather Summary</p>
+        <div class="summarydata">
+          <p class="col1">Currently:</p>
+          <p class="line2"><span id="current"></span>&deg;F</p>
+          <p class="col1">High:</p>
+          <p><span id="hightemp"></span>&deg;F</p>
+          <p class="col1">Wind Chill:</p>
+          <p><span id="chill"></span></p>
+          <p class="col1">Humidity:</p>
+          <p><span id="humid"></span>%</p>
+          <p class="col1">Wind Speed:</p>
+          <p><span id="speed"></span> mph</p>
+        </div>
+      </div>
+
+      <h2 class="forecastTitle">Five Day Forecast</h2>
+      <div class="forecast">
+        <div id="forecastDays"></div>
+      </div>
+      <article>
+        <h2>Article Title</h2>
+        <picture>
+          <source media="(max-width: 640px)" srcset="images/springSmall.jpg" />
+          <img
+            class="articleImage"
+            src="images/spring.jpg"
+            alt="Picture of a water fall. Photo by ArtHouse Studio from Pexels."
+          />
+        </picture>
+        <p class="clearfix">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          dolor urna, eleifend sed magna ut, condimentum tincidunt ex. Etiam
+          pharetra fermentum mauris ut condimentum. Phasellus suscipit velit in
+          sagittis scelerisque. Praesent leo nulla, fringilla sit amet risus
+          eget, pellentesque viverra justo. Pellentesque elit ligula, posuere in
+          porta id, malesuada non orci. In hac habitasse platea dictumst.
+          Aliquam tristique a nisi id accumsan. Integer suscipit consequat
+          sapien, sit amet semper velit gravida non. Nunc laoreet nunc enim. Ut
+          faucibus consequat nulla sit amet congue. Donec vel risus non nulla
+          finibus vestibulum sit amet eu turpis. Duis dictum sem ac urna porta.
+        </p>
+      </article>
       <div class="contactBottom">
         <div class="contact">
           <h3>Contact Information</h3>
           <div class="contactinformation">
-          <div class="address">
-          <h4><img
-              class="pin"
-              src="images/pinLogo.png"
-              alt="picture of a location pin"
-            />Address:</h4>
-          <p>
-           
-            Weather Falls Idaho</p><p>98 W 2nd N St,</p><p> Preston, ID 83263
-          </p>
-          </div>
-          <div class="emailphone">
-          <h4><img
-              class="mail"
-              src="images/mailLogo.png"
-              alt="picture of a letter"
-            />Email:</h4>
-          <p class="email">
-            contactus@weatherfalls.com
-          </p>
-                    <h4><img
-              class="phone"
-              src="images/phoneLogo.png"
-              alt="picture of a phone"
-            />Phone:</h4>
-          <p>
-            (999) 999-9999
-          </p>
+            <div class="address">
+              <h4>
+                <img
+                  class="pin"
+                  src="images/pinLogo.png"
+                  alt="picture of a location pin"
+                />Address:
+              </h4>
+              <p>Weather Falls Idaho</p>
+              <p>98 W 2nd N St,</p>
+              <p>Preston, ID 83263</p>
+            </div>
+            <div class="emailphone">
+              <h4>
+                <img
+                  class="mail"
+                  src="images/mailLogo.png"
+                  alt="picture of a letter"
+                />Email:
+              </h4>
+              <p class="email">contactus@weatherfalls.com</p>
+              <h4>
+                <img
+                  class="phone"
+                  src="images/phoneLogo.png"
+                  alt="picture of a phone"
+                />Phone:
+              </h4>
+              <p>(999) 999-9999</p>
+            </div>
           </div>
         </div>
+        <div class="social">
+          <img
+            src="images/facebookLogo.png"
+            alt="facebook logo"
+            class="facebook"
+          />
+          <img
+            src="images/instagramLogo.png"
+            alt="instagram logo"
+            class="instagram"
+          />
+          <img
+            src="images/twitterLogo.png"
+            alt="twitter logo"
+            class="twitter"
+          />
+        </div>
+        <div class="map">
+          <img
+            src="images/sodaspringsmap.jpg"
+            width="500"
+            alt="map of Soda Springs Idaho"
+          />
+        </div>
       </div>
-          <div class="social">
-            <img src="images/facebookLogo.png" alt="facebook logo" class="facebook" />
-            <img src="images/instagramLogo.png" alt="instagram logo" class="instagram" />
-            <img src="images/twitterLogo.png" alt="twitter logo" class="twitter"/>
-          </div>
+    </main>
 
-       </div>
-      </main>
-       
-      <footer>
+    <footer>
       <div class="bottom clearfix">
         <p>
           &copy; 2021 | Adrienne R. Bunderson |
           <span id="currentdate"></span>
         </p>
         <p><a href="../index.html">Main Page</a></p>
+        <p>
+          Weather information from:
+          <a href="https://openweathermap.org/">OpenWeatherMap</a>
+        </p>
       </div>
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/saturdaybanner.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/sodaspringsweather.js"></script>
   </body>
 </html>
