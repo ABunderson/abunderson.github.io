@@ -186,9 +186,7 @@ nav button {
   margin-left: auto;
   margin-right: auto;
   width: 150px;
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 0;
+  display: block;
 }
 .forecast img {
   text-align: center;
