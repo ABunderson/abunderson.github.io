@@ -1,0 +1,240 @@
+@media only screen and (min-width: 40rem) {
+  /*header*/
+  header h1 {
+    font-size: 39px;
+  }
+
+  /*nav rules */
+  nav button {
+    display: none;
+  }
+  nav ul.hide {
+    display: inline;
+  }
+  nav ul.primaryNav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  nav ul li {
+    width: 25%;
+  }
+  nav ul li:first-child {
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li a {
+    border: none;
+    border-bottom: none;
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+  }
+  nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  }
+
+  /*summary*/
+  .summary p {
+    font-size: 1.3rem;
+  }
+  p.summarytitle {
+    font-size: 1.6rem;
+  }
+  .summary {
+    width: 350px;
+    height: 220px;
+    padding: 15px;
+    top: 100px;
+    left: 50px;
+  }
+
+  .summarydata {
+    line-height: 1rem;
+  }
+  .line2 {
+    line-height: 1.25rem;
+  }
+
+  /*forecast*/
+  .forecast div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*article*/
+  article {
+    margin-top: 1rem;
+    display: block;
+  }
+
+  article p {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .articleImage {
+    width: 50%;
+    float: right;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  /*contact information*/
+  .contactBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .gallery-social {
+    padding-top: 140px;
+  }
+  .contact {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .map {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+  }
+  .contact p {
+    padding-left: 15px;
+  }
+
+  .contactinformation {
+    display: grid;
+    line-height: 30%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*gallery*/
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /*stormcenter*/
+  .dangerLevel,
+  form label.sbs,
+  form label.slide,
+  form label.top {
+    font-size: 1.2rem;
+  }
+
+  form label.slide input,
+  form label.top input,
+  form label.top textarea,
+  form label.top select {
+    max-width: 25rem;
+  }
+  form legend {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    padding: 0.7rem;
+  }
+  textarea {
+    height: 150px;
+  }
+  form input.submitButton {
+    max-width: 25rem;
+    font-size: 1.6rem;
+  }
+
+  /*Home Page*/
+
+  .cardshome section a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cardshome section {
+    margin: 20px 10px 20px 10px;
+  }
+
+  .cardshome img {
+    border-radius: 0;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-top: none;
+    box-shadow: none;
+    border-radius: 0 30px 30px 0;
+  }
+
+  .cardshome h3 {
+    grid-column-start: 1;
+    border-radius: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .cardshome h2 {
+    border-radius: 30px 0 0 0;
+  }
+
+  .cardshome .data {
+    grid-column-start: 1;
+    padding: 0 10px 0 10px;
+    border-radius: 0 0 30px 0;
+    border-bottom: 1px solid #283d4b;
+    border-radius: 0 0 0 30px;
+  }
+
+  .cardshome section:nth-child(even) img {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-radius: 30px 0 0 30px;
+  }
+
+  .cardshome section:nth-child(even) h3 {
+    grid-column-start: 2;
+  }
+  .cardshome section:nth-child(even) h2 {
+    border-radius: 0 30px 0 0;
+  }
+
+  .cardshome section:nth-child(even) .data {
+    grid-column-start: 2;
+    padding: 0 10px 0 10px;
+    border-radius: 0 0 30px 0;
+    border-bottom: 1px solid #283d4b;
+  }
+
+  .extrahome {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .extrahome h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .homepic1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .homepic1 img {
+    border-radius: 30px 0 0 30px;
+  }
+
+  .homepic2 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .homepic2 img {
+    border-radius: 0 30px 30px 0;
+  }
+  .extrahome p {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding-right: 10px;
+    text-align: center;
+    padding-top: 0;
+  }
+}
