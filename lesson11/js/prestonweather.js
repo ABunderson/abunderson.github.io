@@ -16,7 +16,7 @@ const apifURL =
 fetch(apifURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
-    console.log(weatherInfo);
+    //console.log(weatherInfo);
 
     let mylist = weatherInfo.list;
     let forecastDayNumber = todayDayNumber;
@@ -24,11 +24,11 @@ fetch(apifURL)
     for (i = 0; i < mylist.length; i++) {
       let time = mylist[i].dt_txt;
       if (time.includes("18:00:00")) {
-        console.log(
+        /*console.log(
           "Found an entry with 18:00:00 in the time. It was report " +
             i +
             " from the mylist of 40"
-        );
+        );*/
 
         forecastDayNumber += 1;
         if (forecastDayNumber === 7) {
@@ -88,4 +88,38 @@ fetch(apiURL)
     } else {
       document.getElementById("chill").textContent = "N/A";
     }
+  });
+
+
+
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject["towns"];
+
+    const event = document.querySelector(".events");
+
+    console.log(towns);
+
+    const townfilter = towns.filter((town) => town.name == "Preston");
+    townfilter.forEach((town) => {
+      let title = document.createElement("h2");
+      let eventadd = document.createElement("p");
+
+      title.innerHTML = `Upcoming Events`;
+
+      let myevents = town.events;
+      console.log (myevents);
+      for (i = 0; 1 < myevents.length; i++) {
+        eventadd = + `${town.events[i]}`;
+      };
+
+      
+     
+      event.append(title); 
+      event.append(eventadd);    });
   });

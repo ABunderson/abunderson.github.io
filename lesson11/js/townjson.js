@@ -9,7 +9,7 @@ fetch(requestURL)
 
     const cards = document.querySelector(".cardshome");
 
-    console.log(towns);
+    
 
     const townfilter = towns.filter(
       (town) =>

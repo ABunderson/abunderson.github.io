@@ -16,7 +16,7 @@ const apifURL =
 fetch(apifURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
-    console.log(weatherInfo);
+    //console.log(weatherInfo);
 
     let mylist = weatherInfo.list;
     let forecastDayNumber = todayDayNumber;
@@ -24,11 +24,11 @@ fetch(apifURL)
     for (i = 0; i < mylist.length; i++) {
       let time = mylist[i].dt_txt;
       if (time.includes("18:00:00")) {
-        console.log(
+        /*console.log(
           "Found an entry with 18:00:00 in the time. It was report " +
             i +
             " from the mylist of 40"
-        );
+        );*/
 
         forecastDayNumber += 1;
         if (forecastDayNumber === 7) {
