@@ -135,8 +135,8 @@
     border-radius: 0 0 30px 30px;
   }
 
-  .cardshome section:nth-child(even) h3,
-  .cardshome section:first-child h3 {
+  .preston h3,
+  .fishhaven h3 {
     padding-bottom: 31px;
   }
 

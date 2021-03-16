@@ -9,6 +9,8 @@ fetch(requestURL)
 
     const cards = document.querySelector(".cardshome");
 
+    console.log(towns);
+
     const townfilter = towns.filter(
       (town) =>
         town.name == "Preston" ||
@@ -38,6 +40,10 @@ fetch(requestURL)
       let loco = location.replace("jpg", "html");
 
       connect.setAttribute("href", loco);
+
+      let classname = location.replace(".jpg", "");
+
+      card.setAttribute("class", classname);
 
       image.setAttribute("src", `images/${town.photo}`);
       image.setAttribute("alt", `Picture of ${town.name}, Idaho`);
