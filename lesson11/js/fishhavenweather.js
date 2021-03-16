@@ -89,3 +89,34 @@ fetch(apiURL)
       document.getElementById("chill").textContent = "N/A";
     }
   });
+
+  const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+  fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      const towns = jsonObject["towns"];
+  
+      const event = document.querySelector(".events");
+  
+      console.log(towns);
+  
+      const townfilter = towns.filter((town) => town.name == "Fish Haven");
+      townfilter.forEach((town) => {
+        let title = document.createElement("h2");
+        let eventadd = document.createElement("div");
+  
+        title.innerHTML = `Upcoming Events`;
+  
+        let myevents = town.events;
+        for (i = 0; i < myevents.length; i++) {
+          let activity = document.createElement("p");
+          activity.innerHTML = `${town.events[i]}`
+          eventadd.append(activity);
+        };
+          
+        event.append(title); 
+        event.append(eventadd);    });
+    });
