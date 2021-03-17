@@ -30,10 +30,11 @@
   }
   nav {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 1;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     margin-top: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
   }
 
   /*summary*/
