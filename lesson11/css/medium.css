@@ -30,7 +30,7 @@
   }
   nav {
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 1;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   }
@@ -204,6 +204,7 @@
   .extrahome {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 1fr;
   }
 
   .extrahome h2 {
@@ -236,5 +237,7 @@
     padding-right: 10px;
     text-align: center;
     padding-top: 0;
+    margin-top: 0;
   }
+
 }
