@@ -9,8 +9,6 @@ fetch(requestURL)
 
     const cards = document.querySelector(".cardshome");
 
-    
-
     const townfilter = towns.filter(
       (town) =>
         town.name == "Preston" ||

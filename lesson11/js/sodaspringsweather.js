@@ -16,20 +16,12 @@ const apifURL =
 fetch(apifURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
-    console.log(weatherInfo);
-
     let mylist = weatherInfo.list;
     let forecastDayNumber = todayDayNumber;
 
     for (i = 0; i < mylist.length; i++) {
       let time = mylist[i].dt_txt;
       if (time.includes("18:00:00")) {
-        console.log(
-          "Found an entry with 18:00:00 in the time. It was report " +
-            i +
-            " from the mylist of 40"
-        );
-
         forecastDayNumber += 1;
         if (forecastDayNumber === 7) {
           forecastDayNumber = 0;
@@ -89,33 +81,32 @@ fetch(apiURL)
       document.getElementById("chill").textContent = "N/A";
     }
   });
-  const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
-  fetch(requestURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsonObject) {
-      const towns = jsonObject["towns"];
-  
-      const event = document.querySelector(".events");
-  
-      console.log(towns);
-  
-      const townfilter = towns.filter((town) => town.name == "Soda Springs");
-      townfilter.forEach((town) => {
-        let title = document.createElement("h2");
-        let eventadd = document.createElement("div");
-  
-        title.innerHTML = `Upcoming Events`;
-  
-        let myevents = town.events;
-        for (i = 0; i < myevents.length; i++) {
-          let activity = document.createElement("p");
-          activity.innerHTML = `${town.events[i]}`
-          eventadd.append(activity);
-        };
-          
-        event.append(title); 
-        event.append(eventadd);    });
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject["towns"];
+
+    const event = document.querySelector(".events");
+
+    const townfilter = towns.filter((town) => town.name == "Soda Springs");
+    townfilter.forEach((town) => {
+      let title = document.createElement("h2");
+      let eventadd = document.createElement("div");
+
+      title.innerHTML = `Upcoming Events`;
+
+      let myevents = town.events;
+      for (i = 0; i < myevents.length; i++) {
+        let activity = document.createElement("p");
+        activity.innerHTML = `${town.events[i]}`;
+        eventadd.append(activity);
+      }
+
+      event.append(title);
+      event.append(eventadd);
     });
+  });
