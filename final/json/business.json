@@ -55,6 +55,14 @@
             "email": "email address",
             "address": "address",
             "website": "business url"
+        },
+        {
+            "name": "something8",
+            "logo": "logo",
+            "phone": "phone number",
+            "email": "email address",
+            "address": "address",
+            "website": "business url"
         }
     ]
 }
