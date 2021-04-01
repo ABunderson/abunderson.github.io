@@ -1,0 +1,60 @@
+{
+    "businesses": [
+        {
+            "name": "something1",
+            "logo": "logo",
+            "phone": "phone number",
+            "email": "email address",
+            "address": "address",
+            "website": "business url"
+        },
+    {
+            "name": "something2",
+            "logo": "logo",
+            "phone": "phone number",
+            "email": "email address",
+            "address": "address",
+            "website": "business url"
+        },
+    {
+            "name": "something3",
+            "logo": "logo",
+            "phone": "phone number",
+            "email": "email address",
+            "address": "address",
+            "website": "business url"
+        },
+    {
+            "name": "something4",
+            "logo": "logo",
+            "phone": "phone number",
+            "email": "email address",
+            "address": "address",
+            "website": "business url"
+        },
+    {
+            "name": "something5",
+            "logo": "logo",
+            "phone": "phone number",
+            "email": "email address",
+            "address": "address",
+            "website": "business url"
+        },
+    {
+            "name": "something6",
+            "logo": "logo",
+            "phone": "phone number",
+            "email": "email address",
+            "address": "address",
+            "website": "business url"
+        },
+    {
+            "name": "something7",
+            "logo": "logo",
+            "phone": "phone number",
+            "email": "email address",
+            "address": "address",
+            "website": "business url"
+        }
+    ]
+}

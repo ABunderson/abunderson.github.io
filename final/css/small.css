@@ -1,0 +1,314 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* root rules */
+:root {
+  --burgundy: #463239;
+  --darkGreen: #35605a;
+  --grey: #6b818c;
+  --lilac: #d8e4ff;
+  --cream: #f9f9f9;
+}
+
+/* whole page rules */
+html {
+  font-family: "kufam", sans-serif;
+  font-size: 20px;
+  background-color: var(--cream);
+}
+main {
+  margin: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fauna One", sans-serif;
+  letter-spacing: 0.5px;
+}
+header {
+  background-color: var(--darkGreen);
+  color: white;
+}
+footer,
+nav {
+  background-color: var(--grey);
+}
+
+/* header */
+header h1 {
+  padding: 10px 67px 10px 125px;
+}
+header h2 {
+  padding: 0 67px 10px 125px;
+}
+header h1,
+header h2 {
+  margin: 0;
+}
+header .logo {
+  float: left;
+  margin: 10px;
+  filter: invert(1);
+}
+.logo {
+  border: 3px solid black;
+  border-radius: 55px;
+}
+
+/* nav */
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 15px 0px 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+nav button {
+  padding-top: 8px;
+  font-size: 2rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border-radius: 10px;
+  background-color: var(--lilac);
+}
+
+nav a:hover {
+  background-color: var(--lilac);
+}
+nav a.active {
+  background-color: var(--burgundy);
+  color: white;
+}
+nav ul.hide {
+  display: none;
+}
+
+/* footer */
+footer {
+  padding-top: 10px;
+  text-align: center;
+}
+footer .logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.social img {
+  width: 50px;
+  transition: 0.5s;
+}
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+  filter: invert(1);
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+}
+.social {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+}
+.contact,
+.link {
+  padding-top: 5px;
+}
+.link ul {
+  padding: 0;
+  list-style-type: none;
+}
+.link ul li a {
+  color: black;
+  display: block;
+  margin-bottom: 2px;
+}
+.link ul li a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact h3 {
+  margin-bottom: 0;
+}
+.contact p {
+  margin-top: 2px;
+}
+
+/* main home */
+.headpic,
+.eventpic,
+.purposepic,
+.adpic {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.headpic {
+  border-radius: 25px;
+  padding: 10px;
+}
+.eventpic,
+.purposepic {
+  border-radius: 0 0 25px 25px;
+}
+main h2 {
+  padding: 20px 0 10px 0;
+}
+.events,
+.purpose,
+.weather,
+.action {
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 25px;
+}
+.hidealert {
+  display: none;
+}
+.advertisement h3 {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 10px;
+}
+.advertisement p {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 0 10px 10px 10px;
+}
+.advertisement picture {
+  grid-area: 1 / 2 / 3 / 3;
+}
+.advertisement img {
+  border-radius: 0 25px 25px 0;
+}
+.ad1,
+.ad2,
+.ad3 {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+/* attribution page */
+.attribution h1,
+.attribution main,
+.attribution footer,
+.attribution h2,
+.attribution h3,
+.attribution p {
+  color: black;
+  background-color: var(--cream);
+  text-align: left;
+  padding: 0;
+}
+.attribution h1,
+.attribution h2,
+.attribution footer {
+  padding: 10px;
+}
+.attribution main h3 {
+  padding: 0 0 0 30px;
+}
+.attribution main a {
+  padding: 0 0 0 50px;
+}
+
+/*contact page*/
+.ccontact,
+.contact-top form,
+.contact-top iframe {
+  padding-bottom: 20px;
+}
+iframe {
+  max-width: 100%;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+.director img {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto 10px auto;
+  border: solid 5px black;
+  border-radius: 15px;
+}
+.director {
+  text-align: center;
+}
+.director p {
+  margin: 2px 0 0 0;
+}
+.director h3 {
+  margin: 0 0 15px 0;
+}
+.contact-top fieldset {
+  background-color: var(--darkGreen);
+  color: white;
+  border-radius: 25px;
+  border: solid 1px black;
+}
+.contact-top legend {
+  background-color: var(--burgundy);
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.contact-top .submitButton {
+  border: none;
+  background-color: var(--burgundy);
+  color: white;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  width: 294px;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  margin-top: 10px;
+  margin-left: 42px;
+}
+.contact-top .submitButton:hover {
+  background-color: var(--grey);
+  color: black;
+}
+.contact-top form label {
+  display: block;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+.contact-top form label input,
+.contact-top form label textarea {
+  display: block;
+  width: 400px;
+}

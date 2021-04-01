@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Chamber of Commerce website for Highland, Utah"
+    />
+    <meta name="author" content="Adrienne Bunderson" />
+    <title>Highland-Chamber of Commerce</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+    <!-- link font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kufam&family=Fauna+One&display=swap""
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/hfavicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="head clearfix">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="images/hlogo.png"
+            alt="Highland-Chamber of Commerce Logo. White mountain icon."
+        /></a>
+        <h1>Highland-Chamber of Commerce</h1>
+        <h2>Bringing Utah County Together</h2>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNavId" class="primaryNav hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">Highland City</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a class="active" href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+
+    <main>
+      <h2>Business Directory</h2>
+      <button onclick="toggleView()"><img class="grid" src="images/grid.png" alt="button that changes view to grid"></button>
+      <button onclick="toggleView()"><img class="list" src="images/list.png" alt="button that changes view to list"></button>
+    </main>
+
+
+    <footer>
+      <div class="bottom">
+      <div class="bottompics">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="images/hlogo.png"
+          alt="Highland-Chamber of Commerce Logo. White mountain icon."
+      /></a>
+      <div class="social">
+        <a href="https://www.facebook.com/">
+          <img
+            src="images/facebookLogo.png"
+            alt="facebook logo"
+            class="facebook"
+        /></a>
+        <a href="https://www.instagram.com/">
+          <img
+            src="images/instagramLogo.png"
+            alt="instagram logo"
+            class="instagram"
+        /></a>
+        <a href="https://twitter.com/">
+          <img src="images/twitterLogo.png" alt="twitter logo" class="twitter"
+        /></a>
+      </div>
+    </div>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <h3>Phone:</h3>
+        <p>(801) 227-9373</p>
+        <h3>Email:</h3>
+        <p>contactus@highlandcommerce.com</p>
+        <h3>Address:</h3>
+        <p>
+          6162 W. 10830 N.<br />
+          Highland, Utah 84003
+        </p>
+      </div>
+      <div class="link">
+        <h2>Quick Links</h2>
+        <ul>
+          <li>
+            <a href="https://www.lonepeakpolice.com/">Lone Peak Police</a>
+          </li>
+          <li>
+            <a href="https://intermountainhealthcare.org/locations/american-fork-hospital/">American Fork Hospital</a>
+          </li>
+          <li>
+            <a href="https://www.highlandcity.org/">City Hall</a>
+          </li>
+          <li>
+            <a href="attribution.html">Attribution Page</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <p>
+        <span id="modified"></span>
+      </p>
+    </footer>
+    <script src="js/allpages.js"></script>
+    <script src="js/directory.js"></script>
+  </body>
+</html>

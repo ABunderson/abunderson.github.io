@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Chamber of Commerce website for Highland, Utah"
+    />
+    <meta name="author" content="Adrienne Bunderson" />
+    <title>Highland-Chamber of Commerce</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+    <!-- link font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kufam&family=Fauna+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/hfavicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="head clearfix">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="images/hlogo.png"
+            alt="Highland-Chamber of Commerce Logo. White mountain icon."
+        /></a>
+        <h1>Highland-Chamber of Commerce</h1>
+        <h2>Bringing Utah County Together</h2>
+      </div>
+    </header>
+
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNavId" class="primaryNav hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">Highland City</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="contact-top">
+      <div class="ccontact">
+      <h2>Contact Information</h2>
+      <h3>Phone:</h3>
+      <p>(801) 227-9373</p>
+      <h3>Email:</h3>
+      <p>contactus@highlandcommerce.com</p>
+      <h3>Address:</h3>
+      <p>
+        6162 W. 10830 N.<br />
+        Highland, Utah 84003
+      </p>
+      </div>
+
+      <form method="get">
+        <fieldset>
+          <legend>Send us a message</legend>
+          <label
+            >Full Name*<input
+              type="text"
+              name="name"
+              pattern="[A-Za-z ]+"
+              required
+              placeholder="First Last"
+          /></label>
+          <label
+            >Phone Number
+            <input type="tel" name="phone" placeholder="### ### ####"
+          /></label>
+          <label
+            >Email*<input
+              type="email"
+              name="email"
+              required
+              placeholder="someone@gmail.com"
+          /></label>
+          <label
+            >Message*<textarea name="description" required></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Send" class="submitButton" />
+      </form>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7554.489803483817!2d-111.79807964998659!3d40.42615367076897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617139060252!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <h2>Board of Directors</h2>
+    <div class="directors">
+    <div class="director">
+        <img
+          src="images/chris.jpg"
+          alt="Picture of a man in a blue t-shirt. Photo by Italo Melo from Pexels."
+        />
+      <h3>Christopher Smith</h3>
+      <p>Chair</p>
+      <p>President</p>
+      <p>Alpine Country Club</p>
+    </div>
+    <div class="director">
+      <img
+        src="images/susan.jpg"
+        alt="Picture of a woman smiling at the camera. Photo by Christina Morillo from Pexels."
+      />
+    <h3>Susan Hall</h3>
+    <p>Vice Chair</p>
+    <p>Co-Owner</p>
+    <p>Mont Blanc Center for Dentristy</p>
+  </div>
+  <div class="director">
+    <img
+      src="images/lucas.jpg"
+      alt="Picture of a man in a grey suit with a colorful tie. Photo by mentatdgt from Pexels."
+    />
+  <h3>Lucas Miller</h3>
+  <p>Past Chair</p>
+  <p>Executive Director</p>
+  <p>Harris Orthodontics</p>
+</div>
+<div class="director">
+  <img
+    src="images/rebecca.jpg"
+    alt="Picture of a blond female wearing white lace. Photo by Alexander Mils from Pexels"
+    loading="lazy"
+  />
+<h3>Rebecca Hansen</h3>
+<p>Board Member</p>
+<p>Owner</p>
+<p>The Painted Daisy Florist</p>
+</div>
+<div class="director">
+  <img
+    src="images/connor.jpg"
+    alt="Picture of a young man in a plaid shirt. Photo by Jeffrey Reed from Pexels."
+  />
+<h3>Connor Murphy</h3>
+<p>Board Member</p>
+<p>Social Manager</p>
+<p>Salon Moda</p>
+</div>
+</div>
+    </main>
+
+    <footer>
+      <div class="bottom">
+        <div class="bottompics">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/hlogo.png"
+              alt="Highland-Chamber of Commerce Logo. White mountain icon."
+          /></a>
+          <div class="social">
+            <a href="https://www.facebook.com/">
+              <img
+                src="images/facebookLogo.png"
+                alt="facebook logo"
+                class="facebook"
+            /></a>
+            <a href="https://www.instagram.com/">
+              <img
+                src="images/instagramLogo.png"
+                alt="instagram logo"
+                class="instagram"
+            /></a>
+            <a href="https://twitter.com/">
+              <img
+                src="images/twitterLogo.png"
+                alt="twitter logo"
+                class="twitter"
+            /></a>
+          </div>
+        </div>
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <h3>Phone:</h3>
+          <p>(801) 227-9373</p>
+          <h3>Email:</h3>
+          <p>contactus@highlandcommerce.com</p>
+          <h3>Address:</h3>
+          <p>
+            6162 W. 10830 N.<br />
+            Highland, Utah 84003
+          </p>
+        </div>
+        <div class="link">
+          <h2>Quick Links</h2>
+          <ul>
+            <li>
+              <a href="https://www.lonepeakpolice.com/">Lone Peak Police</a>
+            </li>
+            <li>
+              <a
+                href="https://intermountainhealthcare.org/locations/american-fork-hospital/"
+                >American Fork Hospital</a
+              >
+            </li>
+            <li>
+              <a href="https://www.highlandcity.org/">City Hall</a>
+            </li>
+            <li>
+              <a href="attribution.html">Attribution Page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        <span id="modified"></span>
+      </p>
+    </footer>
+    <script src="js/allpages.js"></script>
+  </body>
+</html>

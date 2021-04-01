@@ -1,0 +1,56 @@
+@media only screen and (min-width: 64rem) {
+  /* nav */
+  nav ul,
+  main,
+  .bottom,
+  .head {
+    max-width: 64rem;
+    margin: auto;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  /*footer*/
+  .bottom {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer .bottompics {
+    padding-top: 25px;
+  }
+  .social {
+    padding-top: 40px;
+  }
+  .social img {
+    width: 75px;
+  }
+  .contact {
+    grid-area: auto;
+  }
+
+  /* main home page */
+  .advertisement {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .ad3 {
+    grid-area: auto;
+    max-width: 100%;
+  }
+  .events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .events picture {
+    grid-area: 1/1/5/2;
+  }
+  .eventpic {
+    border-radius: 25px 0 0 25px;
+  }
+
+  /*contact page*/
+  .directors {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
