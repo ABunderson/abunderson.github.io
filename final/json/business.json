@@ -11,7 +11,7 @@
         },
     {
             "name": "Mont Blanc Center for Dentistry",
-            "logo": "montblanclogo.jpg",
+            "logo": "montblanclogo.png",
             "phone": "(801) 770-6900",
             "email": "montblancdentistry@gmail.com",
             "address": "5255 W 11000 N,",
@@ -20,7 +20,7 @@
         },
     {
             "name": "Utah Community Credit Union",
-            "logo": "ucculogo.jpg",
+            "logo": "ucculogo.png",
             "phone": "(800) 453-8188",
             "email": "support@uccu.com",
             "address": "5130 W 10700 N,",
@@ -28,49 +28,49 @@
             "website": "www.uccu.com"
         },
     {
-            "name": "something4",
-            "logo": "logo",
-            "phone": "phone number",
-            "email": "email address",
-            "address": "address",
+            "name": "Canyon Copy",
+            "logo": "canyoncopylogo.png",
+            "phone": "(801) 756-8080",
+            "email": "N/A find link on website",
+            "address": "10939 N Alpine Hwy,",
             "city": "Highland, UT 84003",
-            "website": "business url"
+            "website": "www.canyoncopy.com"
         },
     {
-            "name": "something5",
-            "logo": "logo",
-            "phone": "phone number",
-            "email": "email address",
-            "address": "address",
+            "name": "CountrySide Cleaners",
+            "logo": "countrysidelogo.png",
+            "phone": "(801) 763-8765",
+            "email": "N/A",
+            "address": "10919 Alpine Hwy,",
             "city": "Highland, UT 84003",
-            "website": "business url"
+            "website": "N/A"
         },
     {
-            "name": "something6",
-            "logo": "logo",
-            "phone": "phone number",
-            "email": "email address",
-            "address": "address",
+            "name": "Pique Thai",
+            "logo": "thailogo.png",
+            "phone": "(385) 336-3635",
+            "email": "piquethaiutah@gmail.com",
+            "address": "5435 W 11000 N Ste 8-9,",
             "city": "Highland, UT 84003",
-            "website": "business url"
+            "website": "www.piquethaiutah.com"
         },
     {
-            "name": "something7",
-            "logo": "logo",
-            "phone": "phone number",
-            "email": "email address",
-            "address": "address",
+            "name": "Linh's Lash Studios",
+            "logo": "lashlogo.png",
+            "phone": "(801) 800-0867",
+            "email": "linhslashstudios@gmail.com",
+            "address": "10941 N Alpine Hwy,",
             "city": "Highland, UT 84003",
-            "website": "business url"
+            "website": "www.linhslashstudioshighland.com"
         },
         {
-            "name": "something8",
-            "logo": "logo",
-            "phone": "phone number",
-            "email": "email address",
-            "address": "address",
+            "name": "Timpanogos Vision Center",
+            "logo": "visionlogo.jpg",
+            "phone": "(801) 756-9357",
+            "email": "staff@timpvision.com",
+            "address": "5455 W 11000 N #101,",
             "city": "Highland, UT 84003",
-            "website": "business url"
+            "website": "www.visionsource-timpvision.com"
         }
     ]
 }
