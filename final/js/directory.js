@@ -23,7 +23,7 @@ fetch(request)
       name.innerHTML = `${business.name}`;
 
       //image
-      logo.setAttribute("src", `${business.logo}`);
+      logo.setAttribute("src", `images/${business.logo}`);
       logo.setAttribute(
         "alt",
         `Logo for 
