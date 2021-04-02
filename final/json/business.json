@@ -1,12 +1,13 @@
 {
     "businesses": [
         {
-            "name": "something1",
-            "logo": "logo",
-            "phone": "phone number",
-            "email": "email address",
-            "address": "address",
-            "website": "business url"
+            "name": "The Painted Daisy Florist",
+            "logo": "painteddaisy.jpg",
+            "phone": "(801) 763-8721",
+            "email": "thepainteddaisy@hotmail.com",
+            "address": "10929 N Alpine Hwy,",
+            "city": "Highland, UT 84003",
+            "website": "https://www.painteddaisyflorist.com/"
         },
     {
             "name": "something2",
@@ -14,6 +15,7 @@
             "phone": "phone number",
             "email": "email address",
             "address": "address",
+            "city": "Highland, UT 84003",
             "website": "business url"
         },
     {
@@ -22,6 +24,7 @@
             "phone": "phone number",
             "email": "email address",
             "address": "address",
+            "city": "Highland, UT 84003",
             "website": "business url"
         },
     {
@@ -30,6 +33,7 @@
             "phone": "phone number",
             "email": "email address",
             "address": "address",
+            "city": "Highland, UT 84003",
             "website": "business url"
         },
     {
@@ -38,6 +42,7 @@
             "phone": "phone number",
             "email": "email address",
             "address": "address",
+            "city": "Highland, UT 84003",
             "website": "business url"
         },
     {
@@ -46,6 +51,7 @@
             "phone": "phone number",
             "email": "email address",
             "address": "address",
+            "city": "Highland, UT 84003",
             "website": "business url"
         },
     {
@@ -54,6 +60,7 @@
             "phone": "phone number",
             "email": "email address",
             "address": "address",
+            "city": "Highland, UT 84003",
             "website": "business url"
         },
         {
@@ -62,6 +69,7 @@
             "phone": "phone number",
             "email": "email address",
             "address": "address",
+            "city": "Highland, UT 84003",
             "website": "business url"
         }
     ]
