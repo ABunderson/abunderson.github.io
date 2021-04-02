@@ -7,25 +7,25 @@
             "email": "thepainteddaisy@hotmail.com",
             "address": "10929 N Alpine Hwy,",
             "city": "Highland, UT 84003",
-            "website": "https://www.painteddaisyflorist.com/"
+            "website": "www.painteddaisyflorist.com"
         },
     {
-            "name": "something2",
-            "logo": "logo",
-            "phone": "phone number",
-            "email": "email address",
-            "address": "address",
+            "name": "Mont Blanc Center for Dentistry",
+            "logo": "montblanclogo.jpg",
+            "phone": "(801) 770-6900",
+            "email": "montblancdentistry@gmail.com",
+            "address": "5255 W 11000 N,",
             "city": "Highland, UT 84003",
-            "website": "business url"
+            "website": "www.mbdentistry.com"
         },
     {
-            "name": "something3",
-            "logo": "logo",
-            "phone": "phone number",
-            "email": "email address",
-            "address": "address",
+            "name": "Utah Community Credit Union",
+            "logo": "ucculogo.jpg",
+            "phone": "(800) 453-8188",
+            "email": "support@uccu.com",
+            "address": "5130 W 10700 N,",
             "city": "Highland, UT 84003",
-            "website": "business url"
+            "website": "www.uccu.com"
         },
     {
             "name": "something4",

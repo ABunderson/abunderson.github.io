@@ -1,6 +1,5 @@
 const request = "//abunderson.github.io/final/json/business.json";
 
-
 fetch(request)
   .then(function (response) {
     return response.json();
@@ -8,7 +7,7 @@ fetch(request)
   .then(function (jsonObject) {
     const businesses = jsonObject["businesses"];
     const cards = document.querySelector(".cards");
-    console.log(businesses)
+    console.log(businesses);
 
     businesses.forEach((business) => {
       let card = document.createElement("div");
@@ -18,6 +17,7 @@ fetch(request)
       let address = document.createElement("p");
       let email = document.createElement("p");
       let website = document.createElement("p");
+      let city = document.createElement("p");
 
       //Title
       name.innerHTML = `${business.name}`;
@@ -35,6 +35,7 @@ fetch(request)
       address.innerHTML = `Address: ${business.address}`;
       email.innerHTML = `Email: ${business.email}`;
       website.innerHTML = `URL: ${business.website}`;
+      city.innerHTMl = `${business.city}`;
 
       //add to the card
       cards.append(card);
@@ -42,6 +43,7 @@ fetch(request)
       card.append(logo);
       card.append(phone);
       card.append(address);
+      card.append(city);
       card.append(email);
       card.append(website);
     });
