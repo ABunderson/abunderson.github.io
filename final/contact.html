@@ -55,104 +55,115 @@
 
     <main>
       <div class="contact-top">
-      <div class="ccontact">
-      <h2>Contact Information</h2>
-      <h3>Phone:</h3>
-      <p>(801) 227-9373</p>
-      <h3>Email:</h3>
-      <p>contactus@highlandcommerce.com</p>
-      <h3>Address:</h3>
-      <p>
-        6162 W. 10830 N.<br />
-        Highland, Utah 84003
-      </p>
+        <div class="ccontact">
+          <h2>Contact Information</h2>
+          <h3>Phone:</h3>
+          <p>(801) 227-9373</p>
+          <h3>Email:</h3>
+          <p>contactus@highlandcommerce.com</p>
+          <h3>Address:</h3>
+          <p>
+            6162 W. 10830 N.<br />
+            Highland, Utah 84003
+          </p>
+        </div>
+
+        <form method="get">
+          <fieldset>
+            <legend>Send us a message</legend>
+            <label
+              >Full Name*<input
+                type="text"
+                name="name"
+                pattern="[A-Za-z ]+"
+                required
+                placeholder="First Last"
+            /></label>
+            <label
+              >Phone Number
+              <input type="tel" name="phone" placeholder="### ### ####"
+            /></label>
+            <label
+              >Email*<input
+                type="email"
+                name="email"
+                required
+                placeholder="someone@gmail.com"
+            /></label>
+            <label
+              >Message*<textarea name="description" required></textarea>
+            </label>
+          </fieldset>
+          <input type="submit" value="Send" class="submitButton" />
+        </form>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7554.489803483817!2d-111.79807964998659!3d40.42615367076897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617139060252!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
-
-      <form method="get">
-        <fieldset>
-          <legend>Send us a message</legend>
-          <label
-            >Full Name*<input
-              type="text"
-              name="name"
-              pattern="[A-Za-z ]+"
-              required
-              placeholder="First Last"
-          /></label>
-          <label
-            >Phone Number
-            <input type="tel" name="phone" placeholder="### ### ####"
-          /></label>
-          <label
-            >Email*<input
-              type="email"
-              name="email"
-              required
-              placeholder="someone@gmail.com"
-          /></label>
-          <label
-            >Message*<textarea name="description" required></textarea>
-          </label>
-        </fieldset>
-        <input type="submit" value="Send" class="submitButton" />
-      </form>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7554.489803483817!2d-111.79807964998659!3d40.42615367076897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617139060252!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    <h2>Board of Directors</h2>
-    <div class="directors">
-    <div class="director">
-        <img
-          src="images/chris.jpg"
-          alt="Picture of a man in a blue t-shirt. Photo by Italo Melo from Pexels."
-        />
-      <h3>Christopher Smith</h3>
-      <p>Chair</p>
-      <p>President</p>
-      <p>Alpine Country Club</p>
-    </div>
-    <div class="director">
-      <img
-        src="images/susan.jpg"
-        alt="Picture of a woman smiling at the camera. Photo by Christina Morillo from Pexels."
-      />
-    <h3>Susan Hall</h3>
-    <p>Vice Chair</p>
-    <p>Co-Owner</p>
-    <p>Mont Blanc Center for Dentristy</p>
-  </div>
-  <div class="director">
-    <img
-      src="images/lucas.jpg"
-      alt="Picture of a man in a grey suit with a colorful tie. Photo by mentatdgt from Pexels."
-    />
-  <h3>Lucas Miller</h3>
-  <p>Past Chair</p>
-  <p>Executive Director</p>
-  <p>Harris Orthodontics</p>
-</div>
-<div class="director">
-  <img
-    src="images/rebecca.jpg"
-    alt="Picture of a blond female wearing white lace. Photo by Alexander Mils from Pexels"
-    loading="lazy"
-  />
-<h3>Rebecca Hansen</h3>
-<p>Board Member</p>
-<p>Owner</p>
-<p>The Painted Daisy Florist</p>
-</div>
-<div class="director">
-  <img
-    src="images/connor.jpg"
-    alt="Picture of a young man in a plaid shirt. Photo by Jeffrey Reed from Pexels."
-  />
-<h3>Connor Murphy</h3>
-<p>Board Member</p>
-<p>Social Manager</p>
-<p>Salon Moda</p>
-</div>
-</div>
+      <h2>Board of Directors</h2>
+      <div class="directors">
+        <div class="director">
+          <img
+            src="images/chris.jpg"
+            alt="Picture of a man in a blue t-shirt. Photo by Italo Melo from Pexels."
+            loading="lazy"
+          />
+          <h3>Christopher Smith</h3>
+          <p>Chair</p>
+          <p>President</p>
+          <p>Alpine Country Club</p>
+        </div>
+        <div class="director">
+          <img
+            src="images/susan.jpg"
+            alt="Picture of a woman smiling at the camera. Photo by Christina Morillo from Pexels."
+            loading="lazy"
+          />
+          <h3>Susan Hall</h3>
+          <p>Vice Chair</p>
+          <p>Co-Owner</p>
+          <p>Mont Blanc Center for Dentristy</p>
+        </div>
+        <div class="director">
+          <img
+            src="images/lucas.jpg"
+            alt="Picture of a man in a grey suit with a colorful tie. Photo by mentatdgt from Pexels."
+            loading="lazy"
+          />
+          <h3>Lucas Miller</h3>
+          <p>Past Chair</p>
+          <p>Executive Director</p>
+          <p>Harris Orthodontics</p>
+        </div>
+        <div class="director">
+          <img
+            src="images/rebecca.jpg"
+            alt="Picture of a blond female wearing white lace. Photo by Alexander Mils from Pexels"
+            loading="lazy"
+          />
+          <h3>Rebecca Hansen</h3>
+          <p>Board Member</p>
+          <p>Owner</p>
+          <p>The Painted Daisy Florist</p>
+        </div>
+        <div class="director">
+          <img
+            src="images/connor.jpg"
+            alt="Picture of a young man in a plaid shirt. Photo by Jeffrey Reed from Pexels."
+            loading="lazy"
+          />
+          <h3>Connor Murphy</h3>
+          <p>Board Member</p>
+          <p>Social Manager</p>
+          <p>Salon Moda</p>
+        </div>
+      </div>
     </main>
 
     <footer>
