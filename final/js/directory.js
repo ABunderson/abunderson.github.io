@@ -16,8 +16,8 @@ fetch(request)
       let phone = document.createElement("p");
       let address = document.createElement("p");
       let email = document.createElement("p");
-      let website = document.createElement("p");
-      let city = document.createElement("p");
+      let website = document.createElement("a");
+    
 
       //Title
       name.innerHTML = `${business.name}`;
@@ -31,11 +31,11 @@ fetch(request)
       );
       logo.setAttribute("loading", "lazy");
 
-      phone.innerHTML = `Phone number: ${business.phone}`;
-      address.innerHTML = `Address: ${business.address}`;
+      phone.innerHTML = `Phone number: <br>${business.phone}`;
+      address.innerHTML = `Address: <br>${business.address}<br>${business.city}`;
       email.innerHTML = `Email: ${business.email}`;
       website.innerHTML = `URL: ${business.website}`;
-      city.innerHTMl = `${business.city}`;
+      website.setAttribute("src", `https//${business.website}`)
 
       //add to the card
       cards.append(card);
@@ -43,7 +43,6 @@ fetch(request)
       card.append(logo);
       card.append(phone);
       card.append(address);
-      card.append(city);
       card.append(email);
       card.append(website);
     });

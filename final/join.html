@@ -52,7 +52,7 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="join">
       <h2>Join the Highland-Chamber of Commmerce</h2>
       <form method="GET" action="thanks.html">
         <fieldset>
@@ -141,19 +141,19 @@
         <fieldset>
           <legend>Membership Level</legend>
           <h3>See below for the benefits available at each level.</h3>
-          <label
+          <label class="radio"
             ><input type="radio" name="level" value="Non-profit" required />
             Non-profit ($100)</label
           >
-          <label
+          <label class="radio"
             ><input type="radio" name="level" value="Bronze" required /> Bronze
             ($200)</label
           >
-          <label
+          <label class="radio"
             ><input type="radio" name="level" value="Silver" required /> Silver
             ($400)</label
           >
-          <label
+          <label class="radio"
             ><input type="radio" name="level" value="Gold" required /> Gold
             ($1,000)</label
           >
@@ -161,44 +161,52 @@
 
         <input type="submit" value="Join" class="submitButton" />
       </form>
-
-      <h3>Non-profit Benefits</h3>
-      <ul>
-        <li>
-          Your organization will be listed in the Highland-Chamber of Commerce
-          directory.
-        </li>
-        <li>Highland-Chamber of Commerce lanyard.</li>
-        <li>Access to the Highland-Chamber of Commerce Magazine.</li>
-      </ul>
-      <h3>Bronze Benefits</h3>
-      <ul>
-        <li>Includes all Non-profit benefits.</li>
-        <li>Quartly business training meetings.</li>
-        <li>Advertisement in the local calendar.</li>
-        <li>
-          Entered into the best business in the Highland-Chamber of Commerce
-          drawing.
-        </li>
-        <li>Highland-Chamber of Commerce hat.</li>
-      </ul>
-      <h3>Silver Benefits</h3>
-      <ul>
-        <li>Includes all Bronze benefits.</li>
-        <li>Monthly social media posts highlighting your business.</li>
-        <li>Luncheon tickets to the bi-monthly business luncheons.</li>
-        <li>Highland-Chamber of Commerce blanket.</li>
-      </ul>
-      <h3>Gold Benefits</h3>
-      <ul>
-        <li>Includes all Silver benefits.</li>
-        <li>Weekly social media posts highlighting your business.</li>
-        <li>
-          Business highlight on the Highland-Chamber of Commerce home page.
-        </li>
-        <li>Highland-Chamber of Commerce membership plaque.</li>
-        <li>Invitations to all special events.</li>
-      </ul>
+      <div class="benefit">
+        <div class="non-profit">
+        <h3>Non-profit Benefits</h3>
+        <ul>
+          <li>
+            Your organization will be listed in the Highland-Chamber of Commerce
+            directory.
+          </li>
+          <li>Highland-Chamber of Commerce lanyard.</li>
+          <li>Access to the Highland-Chamber of Commerce Magazine.</li>
+        </ul>
+        </div>
+        <div class="bronze">
+        <h3>Bronze Benefits</h3>
+        <ul>
+          <li>Includes all Non-profit benefits.</li>
+          <li>Quartly business training meetings.</li>
+          <li>Advertisement in the local calendar.</li>
+          <li>
+            Entered into the best business in the Highland-Chamber of Commerce
+            drawing.
+          </li>
+          <li>Highland-Chamber of Commerce hat.</li>
+        </ul>
+        </div>
+        <div class="silver">
+        <h3>Silver Benefits</h3>
+        <ul>
+          <li>Includes all Bronze benefits.</li>
+          <li>Monthly social media posts highlighting your business.</li>
+          <li>Luncheon tickets to the bi-monthly business luncheons.</li>
+          <li>Highland-Chamber of Commerce blanket.</li>
+        </ul>
+        </div><div class="gold">
+        <h3>Gold Benefits</h3>
+        <ul>
+          <li>Includes all Silver benefits.</li>
+          <li>Weekly social media posts highlighting your business.</li>
+          <li>
+            Business highlight on the Highland-Chamber of Commerce home page.
+          </li>
+          <li>Highland-Chamber of Commerce membership plaque.</li>
+          <li>Invitations to all special events.</li>
+        </ul>
+        </div>
+      </div>
     </main>
 
     <footer>

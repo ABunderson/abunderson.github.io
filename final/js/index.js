@@ -20,7 +20,7 @@ fetch(apiURL)
 
     title.innerHTML = `Current Weather Conditions`;
     currenttemp.innerHTML = `Currently: ${weatherInfo.current.temp}\u00B0F`;
-    description.innerHTML = `${weatherInfo.current.weather[0].description}`;
+    description.innerHTML = `Condition: ${weatherInfo.current.weather[0].description}`;
     humidity.innerHTML = `Humidity: ${weatherInfo.current.humidity}%`;
     current.setAttribute("class", "currentweather");
 
@@ -32,47 +32,17 @@ fetch(apiURL)
 
     document.getElementById("weather").append(current);
 
-    //alert
-
-    //real info
-    //if (weatherInfo.alerts.event != "undefined") {
-    let alert = document.createElement("div");
-    let atitle = document.createElement("h2");
-    let subtitle = document.createElement("h3");
-    let adescription = document.createElement("p");
-    let aicon = document.createElement("button");
-
-    atitle.innerHTML = `Current Weather Alert`;
-
-    //real info
-    //subtitle.innerHTML = `${weatherInfo.alerts.event}`;
-    //adescription.innerHTML = `${weatherInfo.alerts.description}`;
-
-    //test crap
-    subtitle.innerHTML = `Event type`;
-    adescription.innerHTML = `long event description fdskjladfsf fdfkfdfs fkjdfskjdf fddfsfkjfd dfkjdfkdf fdjkdfkdf fdkjdfkjdf dfskjdfskjdf dfskjdfkjdf dfskjfdskjdfs dfskdfskjdf fdkjfkjfs fksjdfksjdkfjskdfj`;
-
-    aicon.innerHTML = `\u274C`;
-    aicon.setAttribute("id", "alertbutton");
-    alert.setAttribute("id", "alert");
-    alert.setAttribute("class", "alert");
-
-    alert.append(aicon);
-    alert.append(atitle);
-    alert.append(subtitle);
-    alert.append(adescription);
-
-    document.getElementById("alertplace").append(alert);
-    document.getElementById("alertbutton").addEventListener("click", hideAlert);
-
-    //real info
-    //}
-
     //forecast
     let forecast = document.createElement("div");
     let ftitle = document.createElement("h2");
+    let days = document.createElement("section");
     forecast.append(ftitle);
+    forecast.append(days);
+    
     ftitle.innerHTML = `3-Day Forecast`;
+    
+    days.setAttribute("class", "forecastdays");
+
     for (i = 1; i < 4; i++) {
       let day = document.createElement("div");
       let hightemp = document.createElement("p");
@@ -105,7 +75,7 @@ fetch(apiURL)
         "Saturday",
       ];
       const dayName = daynames[dayfind.getDay()];
-      daytitle = dayName;
+      daytitle.innerHTML = `${dayName}`;
 
       day.append(daytitle);
       day.append(hightemp);
@@ -113,7 +83,7 @@ fetch(apiURL)
       day.append(thefIcon);
       day.append(condition);
 
-      forecast.append(day);
+      days.append(day);
     }
 
     forecast.setAttribute("class", "forecast");
@@ -124,4 +94,40 @@ fetch(apiURL)
 function hideAlert() {
   let hide = document.getElementById("alert");
   hide.setAttribute("class", "hidealert");
+}
+
+//alert
+
+//real info
+if (weatherInfo.alerts.event != "undefined") {
+  let alert = document.createElement("div");
+  let atitle = document.createElement("h2");
+  let subtitle = document.createElement("h3");
+  let adescription = document.createElement("p");
+  let aicon = document.createElement("button");
+
+  atitle.innerHTML = `Current Weather Alert`;
+
+  //real info
+  subtitle.innerHTML = `${weatherInfo.alerts.event}`;
+  adescription.innerHTML = `${weatherInfo.alerts.description}`;
+
+  //test crap
+  //subtitle.innerHTML = `Event type`;
+  //adescription.innerHTML = `long event description fdskjladfsf fdfkfdfs fkjdfskjdf fddfsfkjfd dfkjdfkdf fdjkdfkdf fdkjdfkjdf dfskjdfskjdf dfskjdfkjdf dfskjfdskjdfs dfskdfskjdf fdkjfkjfs fksjdfksjdkfjskdfj`;
+
+  aicon.innerHTML = `\u274C`;
+  aicon.setAttribute("id", "alertbutton");
+  alert.setAttribute("id", "alert");
+  alert.setAttribute("class", "alert");
+
+  alert.append(aicon);
+  alert.append(atitle);
+  alert.append(subtitle);
+  alert.append(adescription);
+
+  document.getElementById("alertplace").append(alert);
+  document.getElementById("alertbutton").addEventListener("click", hideAlert);
+
+  //real info
 }

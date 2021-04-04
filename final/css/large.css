@@ -1,11 +1,12 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 1250px) {
   /* nav */
   nav ul,
   main,
   .bottom,
   .head {
-    max-width: 64rem;
-    margin: auto;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   nav ul li a {
@@ -30,7 +31,76 @@
     grid-area: auto;
   }
 
+  /*main page */
+  .forecastdays {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .advertisement {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .advertisement h2 {
+    grid-area: 1/1/2/3;
+  }
+  .advertisement div:nth-child(3) p {
+    padding-bottom: 27px;
+  }
+  .advertisement div:last-child {
+    grid-area: 3/1/4/3;
+    max-width: 620px;
+  }
+  .events picture {
+    grid-area: 1/1/5/2;
+  }
 
+  .events p:nth-child(4),
+  .events h3:nth-child(3) {
+    grid-column: 2/3;
+  }
+
+  /*city page */
+
+  .cityevents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cityevents h3:nth-child(1),
+  .cityevents h3:nth-child(3),
+  .cityevents p:nth-child(2),
+  .cityevents p:nth-child(4) {
+    grid-column: 1/2;
+  }
+  .cityevents h3:nth-child(5) {
+    grid-area: 1/2/2/3;
+  }
+  .cityevents h3:nth-child(7) {
+    grid-area: 3/2/4/3;
+  }
+  .cityevents p:nth-child(6) {
+    grid-area: 2/2/3/3;
+  }
+  .cityevents p:nth-child(8),
+  .cityevents p:nth-child(9) {
+    grid-column: 2/3;
+  }
+  .cityevents picture {
+    grid-column: 1/3;
+  }
+
+  /* join page */
+  .benefit {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .non-profit,
+  .bronze,
+  .silver,
+  .gold {
+    padding-left: 10px;
+    padding-right: 5px;
+    box-shadow: 0 0 10px var(--grey);
+  }
 
   /*contact page*/
   .directors {
