@@ -35,7 +35,7 @@ fetch(request)
       address.innerHTML = `Address: <br>${business.address}<br>${business.city}`;
       email.innerHTML = `Email: ${business.email}`;
       website.innerHTML = `URL: ${business.website}`;
-      website.setAttribute("src", `https//${business.website}`)
+      website.setAttribute("src", `//${business.website}`)
 
       //add to the card
       cards.append(card);
