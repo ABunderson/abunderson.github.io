@@ -17,7 +17,6 @@ fetch(request)
       let address = document.createElement("p");
       let email = document.createElement("p");
       let website = document.createElement("a");
-    
 
       //Title
       name.innerHTML = `${business.name}`;
@@ -35,7 +34,7 @@ fetch(request)
       address.innerHTML = `Address: <br>${business.address}<br>${business.city}`;
       email.innerHTML = `Email: ${business.email}`;
       website.innerHTML = `URL: ${business.website}`;
-      website.setAttribute("src", `//${business.website}`)
+      website.setAttribute("href", `//${business.website}`);
 
       //add to the card
       cards.append(card);
@@ -47,3 +46,20 @@ fetch(request)
       card.append(website);
     });
   });
+
+function gridView() {
+  let show = document.getElementById("changeView");
+  let unbutton = document.getElementById("listBtn");
+  let button = document.getElementById("gridBtn");
+  show.setAttribute("class", "cards grid");
+  button.setAttribute("class", "joinBtn activebutton")
+  unbutton.setAttribute("class", "joinBtn")
+}
+function listView() {
+  let show = document.getElementById("changeView");
+  show.setAttribute("class", "cards list");
+  let button = document.getElementById("listBtn");
+  let unbutton = document.getElementById("gridBtn");
+  button.setAttribute("class", "joinBtn activebutton")
+  unbutton.setAttribute("class", "joinBtn")
+}

@@ -53,21 +53,15 @@
 
     <main>
       <h2>Business Directory</h2>
-      <button onclick="toggleView()">
-        <img
-          id="grid"
-          src="images/grid.png"
-          alt="button that changes view to grid"
-        />
-      </button>
-      <button onclick="toggleView()">
-        <img
-          id="list"
-          src="images/list.png"
-          alt="button that changes view to list"
-        />
-      </button>
-      <div class="cards grid"></div>
+      <div class="buttons">
+        <button onclick="gridView()" class="joinBtn" id="gridBtn">
+          <img src="images/grid.png" alt="button that changes view to grid" />
+        </button>
+        <button onclick="listView()" class="joinBtn" id="listBtn">
+          <img src="images/list.png" alt="button that changes view to list" />
+        </button>
+      </div>
+      <div id="changeView" class="cards grid"></div>
     </main>
 
     <footer>

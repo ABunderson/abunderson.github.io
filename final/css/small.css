@@ -308,13 +308,58 @@ p {
   border-radius: 20px;
   box-shadow: 0 0 5px var(--grey);
 }
-
+.grid a,
+.list a {
+  display: block;
+  padding: 5px;
+  color: black;
+}
+.joinBtn {
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #ca9fa5;
+  filter: invert(1);
+  border: 5px solid white;
+}
+.joinBtn:hover {
+  background-color: var(--grey);
+  transition: 1s;
+  filter: invert(0);
+}
+.joinBtn.activebutton {
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #b9cdc6;
+  filter: invert(1);
+  border: 5px solid white;
+}
+.buttons {
+  margin-left: 15%;
+}
 .grid img {
   width: 100%;
   border: 1px solid black;
   border-radius: 0;
   background-color: white;
 }
+.list img {
+  border: 1px solid black;
+  border-radius: 0;
+  background-color: white;
+  width: 500px;
+  grid-area: 1/1/2/2;
+}
+.list div {
+  margin-top:20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+
+
 
 /* attribution page */
 .attribution h1,
@@ -366,31 +411,22 @@ iframe {
   margin: 0 0 15px 0;
 }
 .contact-top fieldset {
+  border-radius: 20px;
   background-color: var(--darkGreen);
   color: white;
-  border-radius: 25px;
-  border: solid 1px black;
-}
+  margin: 20px auto 0 auto;
+  }
 .contact-top legend {
   background-color: var(--burgundy);
-  border-radius: 15px;
-  padding: 1rem 1.5rem;
-  text-align: left;
-  margin-left: 30px;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  color: white;
+  padding: 15px 15px 10px 15px;
+  border-radius: 20px;
 }
 .contact-top .submitButton {
-  border: none;
   background-color: var(--burgundy);
   color: white;
-  border-radius: 15px;
-  padding: 1rem 1.5rem;
-  width: 294px;
-  font-size: 1.2rem;
-  transition: 0.5s;
-  margin-top: 10px;
-  margin-left: 42px;
+  margin-top: 20px;
+  font-size: 1.5rem;
 }
 .contact-top .submitButton:hover {
   background-color: var(--grey);
@@ -398,12 +434,16 @@ iframe {
 }
 .contact-top form label {
   display: block;
-  text-align: left;
   padding-bottom: 20px;
-  margin-left: 10px;
 }
-.contact-top form label input,
-.contact-top form label textarea {
+.contact-top form input,
+.contact-top form textarea {
   display: block;
+  max-width: 80%;
   width: 400px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.contact-top form label textarea {
+  height: 100px;
 }
