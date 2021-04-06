@@ -56,10 +56,10 @@ nav {
 
 /* header */
 header h1 {
-  padding: 10px 67px 10px 125px;
+  padding: 10px 67px 10px 10px;
 }
 header h2 {
-  padding: 0 67px 10px 125px;
+  padding: 0 67px 15px 10px;
 }
 header h1,
 header h2 {
@@ -397,7 +397,6 @@ p {
 
 /*contact page*/
 .ccontact,
-.contact-top form,
 .contact-top iframe {
   padding-bottom: 20px;
 }
@@ -455,4 +454,14 @@ iframe {
 }
 .contact-top form label textarea {
   height: 100px;
+}
+.form h3 {
+  text-align: center;
+  margin: 5px 0 25px 0;
+}
+.emailHide .submitButton {
+  margin-bottom: 25px;
+}
+h3.emailHide {
+  display: none;
 }
