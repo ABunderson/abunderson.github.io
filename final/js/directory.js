@@ -7,7 +7,7 @@ fetch(request)
   .then(function (jsonObject) {
     const businesses = jsonObject["businesses"];
     const cards = document.querySelector(".cards");
-    console.log(businesses);
+    //console.log(businesses);
 
     businesses.forEach((business) => {
       let card = document.createElement("div");

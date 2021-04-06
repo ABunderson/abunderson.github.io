@@ -4,7 +4,7 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
-    console.log(weatherInfo);
+    //console.log(weatherInfo);
 
     //current weather
     let current = document.createElement("div");
