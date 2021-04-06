@@ -34,7 +34,9 @@ const year = mod.getFullYear();
 const minute = mod.getMinutes();
 let time = mod.getHours();
 let morn_eve = "am";
-if (time > 12) {
+if ((time = 12)) {
+  morn_eve = "pm";
+} else if (time > 12) {
   time = time - 12;
   morn_eve = "pm";
 }
