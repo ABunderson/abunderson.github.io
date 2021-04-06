@@ -224,6 +224,10 @@ p {
   margin-bottom: 5px;
   border-radius: 20px 20px 0 0;
 }
+.forecast h3 {
+  background-color: var(--darkGreen);
+  color: white;
+}
 .currentweather img,
 .forecast img {
   margin: 0 auto 0 auto;
@@ -235,6 +239,13 @@ p {
   text-align: center;
   margin: 10px auto 0 auto;
   border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--grey);
+
+}
+.forecast img {
+  border-radius: 50px;
+  background-color: white;
 }
 
 /* city page */
@@ -275,8 +286,7 @@ p {
 .join form input,
 .join form textarea {
   display: block;
-  max-width: 80%;
-  width: 400px;
+  width: 75%;
   border-radius: 20px;
   padding: 10px;
 }
@@ -439,8 +449,7 @@ iframe {
 .contact-top form input,
 .contact-top form textarea {
   display: block;
-  max-width: 80%;
-  width: 400px;
+  width: 75%;
   border-radius: 20px;
   padding: 10px;
 }
