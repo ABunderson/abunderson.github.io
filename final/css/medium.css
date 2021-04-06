@@ -223,12 +223,11 @@
   .contact-top .emailHide .submitButton {
     margin-bottom: 25px;
   }
-.contact-top {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-}
-form.emailHide {
-  margin-bottom: 20px;
-}
-
+  .contact-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+  form.emailHide {
+    margin-bottom: 20px;
+  }
 }

@@ -241,7 +241,6 @@ p {
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: var(--grey);
-
 }
 .forecast img {
   border-radius: 50px;
@@ -362,14 +361,11 @@ p {
   grid-area: 1/1/2/2;
 }
 .list div {
-  margin-top:20px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
   padding: 10px;
 }
-
-
-
 
 /* attribution page */
 .attribution h1,
@@ -424,7 +420,7 @@ iframe {
   background-color: var(--darkGreen);
   color: white;
   margin: 20px auto 0 auto;
-  }
+}
 .contact-top legend {
   background-color: var(--burgundy);
   color: white;

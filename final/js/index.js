@@ -38,9 +38,9 @@ fetch(apiURL)
     let days = document.createElement("section");
     forecast.append(ftitle);
     forecast.append(days);
-    
+
     ftitle.innerHTML = `3-Day Forecast`;
-    
+
     days.setAttribute("class", "forecastdays");
 
     for (i = 1; i < 4; i++) {

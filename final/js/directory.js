@@ -52,14 +52,14 @@ function gridView() {
   let unbutton = document.getElementById("listBtn");
   let button = document.getElementById("gridBtn");
   show.setAttribute("class", "cards grid");
-  button.setAttribute("class", "joinBtn activebutton")
-  unbutton.setAttribute("class", "joinBtn")
+  button.setAttribute("class", "joinBtn activebutton");
+  unbutton.setAttribute("class", "joinBtn");
 }
 function listView() {
   let show = document.getElementById("changeView");
   show.setAttribute("class", "cards list");
   let button = document.getElementById("listBtn");
   let unbutton = document.getElementById("gridBtn");
-  button.setAttribute("class", "joinBtn activebutton")
-  unbutton.setAttribute("class", "joinBtn")
+  button.setAttribute("class", "joinBtn activebutton");
+  unbutton.setAttribute("class", "joinBtn");
 }
