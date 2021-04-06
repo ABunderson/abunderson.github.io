@@ -68,7 +68,7 @@
           </p>
         </div>
         <div class="form emailHide" id="form">
-          <form method="get" onsubmit="showEmailMessage()">
+          <form onsubmit="showEmailMessage(); return false">
             <fieldset>
               <legend>Send us a message</legend>
               <label
@@ -94,7 +94,7 @@
                 >Message*<textarea name="description" required></textarea>
               </label>
             </fieldset>
-            <input type="submit" value="Send" id ="emailButton" class="submitButton" />
+            <input type="submit" id ="emailButton" class="submitButton" />
           </form>
           <h3 id="emailMessage" class="emailHide">Email is sent. Thank you for your message.</h3>
         </div>
